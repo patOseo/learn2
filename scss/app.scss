@@ -1,0 +1,12 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'jumbo';
+@import 'view';
+@import 'gobar';
+@import 'contact-meta';
+@import 'footer';
+.container {
+    max-width: 1080px;
+}

@@ -1,0 +1,59 @@
+.sec {
+    padding: 60px 0;
+    @include min-screens(1025px) {
+        .row {
+            --bs-gutter-x: 2.5em;
+        }
+    }
+    h2 {
+        color: #353841;
+        font: 700 36px $pop;
+        letter-spacing: 8px;
+        margin-bottom: 60px;
+    }
+    .box {
+        .yt-place,
+        .img-place {
+            margin-bottom: 25px;
+        }
+        h3 {
+            color: #ff6900;
+            font: 700 20px $pop;
+            letter-spacing: 8px;
+        }
+        h4 {
+            color: #000;
+            font: 12px $pop;
+            letter-spacing: 8px;
+        }
+        p {
+            color: #555;
+            font: 18px/1.7 $pop;
+            margin: 20px 0 0 0;
+        }
+    }
+    &.blog {
+        h3 {
+            a {
+                color: #353841;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.yt-place {
+    position: relative;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &:before {
+        display: block;
+        content: "";
+        padding-top: 56.25%;
+    }
+}

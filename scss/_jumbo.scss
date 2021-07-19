@@ -1,0 +1,77 @@
+@keyframes anthemAnimatedGradient {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+.animategradient {
+    background: linear-gradient( 226deg, #e34d67, #f6653c, #1e83ec, #5841b8);
+    background-size: 800% 800%;
+    animation: anthemAnimatedGradient 20s ease infinite;
+}
+
+.jumbo {
+    padding: 60px 0;
+    h1 {
+        color: #fff;
+        font: 700 36px $pop;
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+    }
+    h2 {
+        color: #fff;
+        font: 700 30px $pop;
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+    }
+    p {
+        color: #fff;
+        font: 18px/1.8 $pop;
+        &.ls2 {
+            letter-spacing: 1.8px;
+        }
+    }
+    strong {
+        font-weight: 700;
+    }
+    .yt-place {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .jumbo-content {
+        margin-bottom: 80px;
+        margin-top: 50px;
+    }
+    .promoted-link {
+        margin-bottom: 60px;
+        .box {
+            background-size: cover;
+            padding: 40px;
+            h2 {
+                font-size: 26px;
+                letter-spacing: normal;
+                line-height: 1.8;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .shadow-text {
+        text-shadow: 0em 0.1em 0.1em rgba(#000, 0.4);
+        .counter {
+            font: 700 72px $pop;
+            margin-bottom: 20px;
+            text-shadow: 0em 0.1em 0.1em rgba(#000, 0.4);
+            color: #fff;
+        }
+    }
+}
+
+.cta {
+    @include cta;
+}

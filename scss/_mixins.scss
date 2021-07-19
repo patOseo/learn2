@@ -1,0 +1,43 @@
+@mixin max-screens($size:767px) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin min-screens($size:768px) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin cta {
+    border-radius: 3px;
+    color: #1e83ec;
+    font: 700 15px $lato;
+    letter-spacing: 4px;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    .icon {
+        margin-right: 8px;
+        svg {
+            fill: #fff;
+        }
+    }
+    &.white {
+        background-color: #fff;
+    }
+    &.blue {
+        background-color: #0c71c3;
+    }
+    &.gold {
+        background-color: #f7a57c;
+    }
+    &.lightblue {
+        background: #2ea3f2;
+    }
+    &:hover {
+        background: #f16a1f;
+        color: #fff!important;
+    }
+}
