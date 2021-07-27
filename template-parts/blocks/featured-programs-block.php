@@ -45,8 +45,7 @@ $background_color = get_field('background_color');
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $count++;
-
-                    $class = ($count > 1) ? 'text-white' : '';
+                    $color = get_sub_field('heading_color');
             ?>
                     
                   
@@ -54,7 +53,7 @@ $background_color = get_field('background_color');
                     <h3 class="text-center text-uppercase"><?= $heading1; ?> </h3>
                     <a href="<?= $link; ?>" class="d-block img-feature">
                         <img src="<?= $background_image; ?> " alt="" class="w-100">
-                        <h2 class="mb-0 text-center text-uppercase <?= $class; ?>"><?= $title; ?> </h2>
+                        <h2 class="mb-0 text-center text-uppercase" <?php if($color): ?>style="color:<?php echo $color; endif; ?>"><?= $title; ?> </h2>
                     </a>
                 </div>
 
