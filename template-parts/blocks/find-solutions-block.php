@@ -58,6 +58,8 @@ $description = get_field('description');
                     array(
                         'taxonomy' => 'program',
                         'terms'    => $select_category->term_id,
+                        'order' => 'ASC',
+                        'orderby' => 'menu_order',
                         'include_children' => false
                     ),
                 )
