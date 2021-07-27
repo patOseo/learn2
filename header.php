@@ -56,11 +56,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         wp_nav_menu( $args ); 
                         ?>
 
-                <!-- 
+                
                 <div class="icon d-md-none" id="navcall" id="navcall">
                     <div class="ham"><span></span><span></span><span></span></div>
                     <div class="icon-cross">&#x2715;</div>
                 </div>
+                <!-- 
                 <div class="srhbox" id="srhbox">
                     <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
                 </div>
