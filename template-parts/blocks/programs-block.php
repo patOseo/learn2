@@ -5,6 +5,8 @@ $the_cat = get_field('program_category');
 $args = array(
     'post_type' => 'programs',
     'posts_per_page' => -1,
+    'order' => 'ASC',
+    'orderby' => 'menu_order',
     'tax_query' => array(
         array(
             'taxonomy' => 'program',
