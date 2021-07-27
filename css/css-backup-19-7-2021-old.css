@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'URW Geometric';
+  src: url("../fonts//URWGeometric-Regular.woff2") format("woff2"), url("../fonts//URWGeometric-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'URW Geometric';
+  src: url("../fonts//URWGeometric-Bold.woff2") format("woff2"), url("../fonts//URWGeometric-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+.header {
+  background: #fff;
+  left: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+  .header .top-nav {
+    background: #353841;
+    padding: 10px 15px; }
+    .header .top-nav ul li {
+      color: #fff;
+      font: 16px "URW Geometric", sans-serif;
+      margin-right: 15px; }
+  .header .navbar {
+    padding: 5px 30px; }
+    .header .navbar .main-nav {
+      position: relative; }
+      .header .navbar .main-nav.clicked .nav {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none; }
+    .header .navbar .nav li {
+      color: #000;
+      font: 14px/1 "Lato", sans-serif;
+      letter-spacing: 3px; }
+      .header .navbar .nav li a {
+        display: block;
+        padding: 10px 20px;
+        transition: opacty 0.4s ease; }
+        .header .navbar .nav li a:hover {
+          opacity: 0.7; }
+      .header .navbar .nav li.active a {
+        position: relative; }
+        .header .navbar .nav li.active a:after {
+          background: #f16a1f;
+          content: '';
+          height: 4px;
+          left: 20px;
+          position: absolute;
+          top: 52px;
+          width: calc(100% - 40px); }
+        .header .navbar .nav li.active a:hover {
+          opacity: 1; }
+    .header .navbar .srhbox {
+      background: #fff;
+      display: none;
+      height: 100%;
+      left: 20px;
+      position: absolute;
+      top: 0;
+      width: calc(100% - 20px); }
+      .header .navbar .srhbox input {
+        color: #000;
+        font: 14px/1 "Lato", sans-serif;
+        letter-spacing: 3px;
+        outline: 0 none !important; }
+      .header .navbar .srhbox .close-srh {
+        cursor: pointer; }
+    .header .navbar .srhcall {
+      cursor: pointer;
+      height: 18px;
+      width: 18px; }
+  .header a {
+    color: inherit;
+    text-decoration: none; }
+
+@keyframes anthemAnimatedGradient {
+  0% {
+    background-position: 93% 0%; }
+  50% {
+    background-position: 0% 100%; }
+  100% {
+    background-position: 93% 0%; } }
+.animategradient {
+  background: linear-gradient(226deg, #e34d67, #f6653c, #1e83ec, #5841b8);
+  background-size: 800% 800%;
+  animation: anthemAnimatedGradient 20s ease infinite; }
+
+.jumbo {
+  padding: 60px 0; }
+  .jumbo h1 {
+    color: #fff;
+    font: 700 36px "URW Geometric", sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 40px; }
+  .jumbo h2 {
+    color: #fff;
+    font: 700 30px "URW Geometric", sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 40px; }
+  .jumbo p {
+    color: #fff;
+    font: 18px/1.8 "URW Geometric", sans-serif; }
+    .jumbo p.ls2 {
+      letter-spacing: 1.8px; }
+  .jumbo strong {
+    font-weight: 700; }
+  .jumbo .yt-place {
+    overflow: hidden;
+    border-radius: 10px; }
+  .jumbo .jumbo-content {
+    margin-bottom: 80px;
+    margin-top: 50px; }
+  .jumbo .promoted-link {
+    margin-bottom: 60px; }
+    .jumbo .promoted-link .box {
+      background-size: cover;
+      padding: 40px; }
+      .jumbo .promoted-link .box h2 {
+        font-size: 26px;
+        letter-spacing: normal;
+        line-height: 1.8;
+        margin-bottom: 10px; }
+  .jumbo .shadow-text {
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4); }
+    .jumbo .shadow-text .counter {
+      font: 700 72px "URW Geometric", sans-serif;
+      margin-bottom: 20px;
+      text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+      color: #fff; }
+
+.cta {
+  border-radius: 3px;
+  color: #1e83ec;
+  font: 700 15px "Lato", sans-serif;
+  letter-spacing: 4px;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: all .3s ease-in-out; }
+  .cta .icon {
+    margin-right: 8px; }
+    .cta .icon svg {
+      fill: #fff; }
+  .cta.white {
+    background-color: #fff; }
+  .cta.blue {
+    background-color: #0c71c3; }
+  .cta.gold {
+    background-color: #f7a57c; }
+  .cta.lightblue {
+    background: #2ea3f2; }
+  .cta:hover {
+    background: #f16a1f;
+    color: #fff !important; }
+
+.sec {
+  padding: 60px 0; }
+  @media (min-width: 1025px) {
+    .sec .row {
+      --bs-gutter-x: 2.5em; } }
+  .sec h2 {
+    color: #353841;
+    font: 700 36px "URW Geometric", sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 60px; }
+  .sec .box .yt-place,
+  .sec .box .img-place {
+    margin-bottom: 25px; }
+  .sec .box h3 {
+    color: #ff6900;
+    font: 700 20px "URW Geometric", sans-serif;
+    letter-spacing: 8px; }
+  .sec .box h4 {
+    color: #000;
+    font: 12px "URW Geometric", sans-serif;
+    letter-spacing: 8px; }
+  .sec .box p {
+    color: #555;
+    font: 18px/1.7 "URW Geometric", sans-serif;
+    margin: 20px 0 0 0; }
+  .sec.blog h3 a {
+    color: #353841;
+    text-decoration: none; }
+
+.yt-place {
+  position: relative; }
+  .yt-place iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .yt-place:before {
+    display: block;
+    content: "";
+    padding-top: 56.25%; }
+
+.bar-go {
+  background: linear-gradient(to right, #F18521, #E41E2D);
+  padding: 45px 0;
+  position: relative; }
+  .bar-go h2 {
+    color: #fff;
+    font: 700 36px "URW Geometric", sans-serif; }
+  .bar-go .cta {
+    color: #f15e47; }
+  .bar-go:before, .bar-go:after {
+    background: linear-gradient(to right, #1e83ec 0%, #f6653c 100%);
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  .bar-go:before {
+    top: 0; }
+  .bar-go:after {
+    bottom: 0; }
+
+.copyright {
+  background: #3d3d3d;
+  padding: 15px 0; }
+  .copyright p {
+    font: 14px "URW Geometric", sans-serif;
+    letter-spacing: 4px; }
+  .copyright a {
+    color: inherit;
+    text-decoration: none; }
+
+.container {
+  max-width: 1080px; }
+
+/*# sourceMappingURL=css.css.map */

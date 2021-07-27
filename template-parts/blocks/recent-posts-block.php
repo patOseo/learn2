@@ -19,12 +19,12 @@
                     <?php $image_src = get_the_post_thumbnail_url($recent_post_1, 'medium'); ?>
                     <div class="img-place">
                         
-                        <a href="#"><img src="<?= $image_src; ?>" alt="" class="w-100"></a>
+                        <img src="<?= $image_src; ?>" alt="" class="w-100">
                     </div>
                     <h3 class="text-uppercase"><a href="<?= get_permalink($recent_post_1); ?>"><?= get_the_title($recent_post_1); ?></a></h3>
                     <p><?= get_the_excerpt($recent_post_1);  ?></p>
                 </div>
-                <a href="<?= get_permalink($recent_post_1); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</a>
+                <a href="<?= get_permalink($recent_post_1); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4 stretched-link">read more</a>
             </div>
             <div class="box col-md-4 d-flex flex-column justify-content-between">
                 <div class="upper">
@@ -35,7 +35,7 @@
                     <h3 class="text-uppercase"><a href="<?= get_permalink($recent_post_2); ?>"><?= get_the_title($recent_post_2); ?></a></h3>
                     <p><?= get_the_excerpt($recent_post_2);  ?></p>
                 </div>
-                <a href="<?= get_permalink($recent_post_2); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</a>
+                <a href="<?= get_permalink($recent_post_2); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4 stretched-link">read more</a>
             </div>
             <div class="box col-md-4 d-flex flex-column justify-content-between">
                 <div class="upper">
@@ -46,7 +46,7 @@
                     <h3 class="text-uppercase"><a href="<?= get_permalink($recent_post_3); ?>"><?= get_the_title($recent_post_3); ?></a></h3>
                     <p><?= get_the_excerpt($recent_post_3);  ?></p>
                 </div>
-                <a href="<?= get_permalink($recent_post_3); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</a>
+                <a href="<?= get_permalink($recent_post_3); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4 stretched-link">read more</a>
             </div>
         
         </div>

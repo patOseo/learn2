@@ -33,7 +33,7 @@ $button_link = get_field('button_link');
 <section class="align-items-center d-flex parallax justify-content-center" style="background-image: url(<?= $background_image; ?>);">
     <div class="container my-5 text-center">
         <h2 class="text-uppercase text-white bigger"><?= $heading; ?></h2><br><br>
-        <a href="<?= $button_link; ?>" class="bigger cta d-inline-flex justify-content-center orangegrad px-5 py-3 text-uppercase text-white"><?= $button; ?></a>
+        <?php if($button_link): ?><a href="<?= $button_link; ?>" class="bigger cta d-inline-flex justify-content-center orangegrad px-5 py-3 text-uppercase text-white"><?= $button; ?></a><?php endif; ?>
 </section>
 
 

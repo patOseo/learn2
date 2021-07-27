@@ -31,6 +31,6 @@ $button_link = get_field('button_link');
     <div class="container text-center">
         <h2 class="text-uppercase"><?= $heading; ?></h2>
         <p><?= $description; ?></p>
-        <a href="<?= $button_link; ?>" class="bigger cta d-inline-flex justify-content-center orangegrad shadow px-5 py-3 text-uppercase text-white"><?= $button; ?> </a>
+        <a href="<?= $button_link; ?>" class="bigger cta d-inline-flex justify-content-center orangegrad shadow px-5 py-3 text-uppercase text-white" target="_blank" rel="noopener,noreferrer"><?= $button; ?> </a>
     </div> 
 </section>

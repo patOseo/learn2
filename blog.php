@@ -10,6 +10,7 @@ get_header();
 		'post_type'  => 'post',
 		'post_status'=> 'publish',
 		'posts_per_page' => 15,
+		'order' => 'DESC',
 		'paged'      => $paged
 	));
     
@@ -38,11 +39,11 @@ get_header();
 	                        </div>
 		                    <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
 		                    	<div class="text">
-		                        	<h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
+		                        	<h2><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
 		                        	<h3 class="author"><i>by <a href="#"><?php the_author(); ?></a></i></h3>
 		                        	<p><?= get_the_excerpt(); ?></p>
 		                       </div>
-		                       <a href="<?= get_permalink(); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</a>
+		                       <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
 		                    </div>
 		                </div>
 			        </div>
@@ -54,13 +55,13 @@ get_header();
             
            <div class="col-12 d-flex justify-content-between">
       	        <?php if($paged <=  $total && $paged > 1  ) : ?>
-      		        <a href="/blog/page/<?= max( 1, get_query_var('paged') - 1 ); ?>" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">&lt;&lt; Older Entries</a>
+      		        <a href="/blog/page/<?= max( 1, get_query_var('paged') - 1 ); ?>" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">&lt;&lt; Latest Entries</a>
       	        <?php endif;  ?>
       	        
       	        
 
                   <?php if($paged <  $total ) : ?>
-      		        <a href="/blog/page/<?= max( 1, get_query_var('paged') ) + 1; ?>" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">Latest Entries &gt;&gt;</a>
+      		        <a href="/blog/page/<?= max( 1, get_query_var('paged') ) + 1; ?>" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">Older Entries &gt;&gt;</a>
       	        <?php endif;  ?>
            </div>
 

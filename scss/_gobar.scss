@@ -1,27 +1,40 @@
 .bar-go {
     background: linear-gradient(to right, #F18521, #E41E2D);
-    padding: 45px 0;
     position: relative;
+    padding: 30px 0;
+    @include min-screens {
+        padding: 45px 0;
+    }
     h2 {
-        color: #fff;
-        font: 700 36px $pop;
+        color: $white;
     }
     .cta {
-        color: #f15e47;
+        color: $orange;
     }
-    &:before,
-    &:after {
-        background: linear-gradient(to right, #1e83ec 0%, #f6653c 100%);
-        content: '';
-        height: 5px;
-        left: 0;
-        position: absolute;
-        width: 100%;
+    @include min-screens {
+        &:before,
+        &:after {
+            background: linear-gradient(to right, $linkblue 0%, #f6653c 100%);
+            content: '';
+            height: 5px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 0;
+        }
     }
-    &:before {
-        top: 0;
+    &.greygrad {
+        background: radial-gradient(circle at center, #707070 50%, #383838 100%);
     }
-    &:after {
-        bottom: 0;
+    &.no-bod {
+        &:before,
+        &:after {
+            display: none;
+        }
     }
 }

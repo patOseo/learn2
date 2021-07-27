@@ -1,8 +1,8 @@
     <?php if(!empty(get_field('full_image'))) :  ?>
     
-    <section class="hero blog-hero align-items-end d-flex " style="background-image: url('<?= get_field('full_image'); ?>');">
+    <section class="hero blog-hero align-items-end d-flex " style="background-image:url('http://learn2.ihearttraffic.ca/wp-content/uploads/2021/07/blog-bg-39.jpg')">
         <div class="container-xl">
-            <h1 class="text-center text-uppercase text-white">Blog</h1>
+            <p class="text-center text-uppercase text-white h1">Blog</p>
         </div>
     </section>
    
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="heading">
-                        <h2 class="text-uppercase"><?= get_the_title(); ?></h2>
+                        <h1 class="text-uppercase"><?= get_the_title(); ?></h1>
                         <h3>By <a href="#"><?= ucfirst(get_the_author()); ?></a></h3>
                     </div>
                     <div class="blog-content">
@@ -56,14 +56,8 @@
                  <?php endif; ?>
                     
                     <div class="align-items-center d-flex justify-content-between visit-post">
-                        <a href="#" class="previous-post">
-                            <span class="arrow">&larr;</span>
                             <span class="nav-label"><?php previous_post_link(); ?></span>
-                        </a>
-                        <a href="#" class="next-post">
                             <span class="nav-label"><?php next_post_link();?></span>
-                            <span class="meta-nav">&rarr;</span>
-                        </a>
                     </div>
                     <div class="search-post">
                         <form action="" class="d-flex">
@@ -77,16 +71,15 @@
                 </div>
               
                 
-                <?php if( !empty(get_field('heading')) && !empty(get_field('description_1')) ) :  ?>
+
                 <div class="col-md-4">
                     <div class="side">
-                        <h2 class="text-uppercase"><?= get_field('heading'); ?></h2>
-                        <p><?= get_field('description_1'); ?></p>
-                        <a href="<?= get_field('cta_button_link'); ?>" class="cta d-block text-center text-white orange"><?= get_field('cta_button'); ?></a>
-                        <div class="ad-img"><img src="/wp-content/uploads/2021/07/ad-img.jpg" alt="" class="w-100"></div>
+                        <?php if (is_active_sidebar( 'blog-sidebar' ) ) { 
+                       dynamic_sidebar( 'blog-sidebar' );
+                    }       
+                ?>
                     </div>
                 </div>
-                <?php endif; ?>
             
             </div>
         </div>

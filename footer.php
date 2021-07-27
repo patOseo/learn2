@@ -1,4 +1,7 @@
+
 <footer class="footer">
+
+    <?php if(!get_field('hide_footer')): ?>
     <div class="social container">
         <?php 
             $args = array(
@@ -19,7 +22,7 @@
             <div class="align-items-center align-self-center col-md-6 d-flex flex-column justify-content-center px-5">
               
 
-                <?php if (is_active_sidebar( 'footer-logo-section-about' ) ) { 
+                <?php if (is_active_sidebar( 'footer-logo-section' ) ) { 
                        dynamic_sidebar( 'footer-logo-section' );
                     }       
                 ?>
@@ -40,6 +43,8 @@
             </div>
         </div>
     </div>
+    <?php endif; ?>
+    
     <div class="copyright">
         <div class="container">
             <?php if (is_active_sidebar( 'footer-copy-right-text' ) ) { 
@@ -50,12 +55,6 @@
        
     </div>
 </footer>
-
-<script type="text/javascript">
-    jQuery('p:empty'). remove();
-    jQuery( "a[href~='http://www.learn2.cybertronindia.com/programs/meetings-that-produce-results/']" ).attr('href','/');
-    jQuery( "a[href~='http://www.learn2.cybertronindia.com/programs/save-the-titanic/']" ).attr('href','https://www.save-the-titanic.com/');
-</script>
 
 <?php wp_footer(); ?>
 

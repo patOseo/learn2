@@ -38,9 +38,11 @@ $button_link = get_field('button_link');
                     <iframe width="560" height="315" src="<?= $vedio_link;?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
             </div>
+            <?php if($button_link): ?>
             <div class="col-12 mt-4 text-center">
                 <a href="<?= $button_link; ?>" class="align-items-center bigger cta d-inline-flex justify-content-center mt-4 orangegrad px-5 py-3 text-uppercase text-white"><?= $button; ?></a>
             </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>

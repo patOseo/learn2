@@ -36,6 +36,7 @@ $button_link = get_field('button_link');
 <style type="text/css">
 	body{
 	    background: url(<?= $background_image; ?>);
+        background-size: cover;
 	}
 </style>
 <?php endif; ?>
@@ -58,7 +59,7 @@ $button_link = get_field('button_link');
                 <?= $description; ?>
             </div>
             <div class="col-12 mt-4 text-center">
-                <a href="<?= $button_link; ?>" class="align-items-center bigger cta d-inline-flex justify-content-center mt-4 orangegrad px-md-5 py-3 text-uppercase text-white"><?= $button; ?></a>
+                <a href="<?= $button_link; ?>" class="align-items-center bigger cta d-inline-flex justify-content-center mt-4 orangegrad px-md-5 py-3 text-uppercase text-white" target="_blank" rel="noopener,noreferrer"><?= $button; ?></a>
             </div>
         </div>
     </div>

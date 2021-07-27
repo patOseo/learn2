@@ -1,0 +1,9 @@
+.gform_wrapper label.gfield_label, .gform_wrapper legend.gfield_label {
+	font-weight: normal !important;
+}
+
+.gform_button {
+	&:hover {
+		cursor: pointer;
+	}
+}

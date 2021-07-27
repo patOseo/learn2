@@ -33,7 +33,7 @@ $image = get_field('image');
     <div class="container">
         <h2 class="text-center text-uppercase"><?= $heading; ?></h2>
         <?= $description; ?>
-        <div class="high-cta text-center"><a href="/unique-solution/" class="bigger bodred cta d-inline-flex grey px-5 red-white-text text-uppercase"><?= $button; ?></a></div>
+        <div class="high-cta text-center"><a href="<?= $button_link; ?>" class="bigger bodred cta d-inline-flex grey px-5 red-white-text text-uppercase"><?= $button; ?></a></div>
         <?= $sub_description; ?>
         <div class="client-list-pic">
             <img src="<?= $image; ?>" alt="" class="w-100">

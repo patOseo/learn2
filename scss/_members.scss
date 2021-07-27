@@ -1,0 +1,143 @@
+.member {
+    .box {
+        .img {
+            border: 5px solid $black;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 200px;
+        }
+        .icon {
+            padding: 15px 0;
+            span {
+                border-radius: 50%;
+                cursor: pointer;
+                height: 60px;
+                overflow: hidden;
+                position: relative;
+                width: 60px;
+                &:before,
+                &:after {
+                    background: $white;
+                    bottom: 50%;
+                    border-radius: 5px;
+                    content: '';
+                    position: absolute;
+                    right: 50%;
+                    transform: translate(50%, 50%);
+                }
+                &.plus {
+                    &:before {
+                        height: 3px;
+                        width: 24px;
+                    }
+                    &:after {
+                        height: 24px;
+                        width: 3px;
+                    }
+                }
+                &.minus {
+                    display: none;
+                    &:before {
+                        height: 3px;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+        .copy-acc {
+            display: none;
+            p {
+                font-size: 18px;
+            }
+        }
+        .meta {
+            h2 {
+                font-size: 18px;
+                letter-spacing: normal;
+                margin-bottom: 5px;
+            }
+            p {
+                margin: 0 0 5px;
+            }
+            a {
+                font: 700 18px $pop;
+                text-decoration: none;
+            }
+        }
+        &.yellow {
+            .img {
+                border-color: $yellow;
+            }
+            .icon {
+                span {
+                    background-color: $yellow;
+                }
+            }
+            .meta {
+                a {
+                    color: $yellow;
+                }
+            }
+        }
+        &.blue {
+            .img {
+                border-color: $blue;
+            }
+            .icon {
+                span {
+                    background-color: $blue;
+                }
+            }
+            .meta {
+                a {
+                    color: $blue;
+                }
+            }
+        }
+        &.green {
+            .img {
+                border-color: $green;
+            }
+            .icon {
+                span {
+                    background-color: $green;
+                }
+            }
+            .meta {
+                a {
+                    color: $green;
+                }
+            }
+        }
+        &.orange {
+            .img {
+                border-color: $orange;
+            }
+            .icon {
+                span {
+                    background-color: $orange;
+                }
+            }
+            .meta {
+                a {
+                    color: $orange;
+                }
+            }
+        }
+        .accordion {
+            &.clicked {
+                .icon {
+                    .plus {
+                        display: none;
+                    }
+                    .minus {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    [class*="col-"] {
+        margin-bottom: 50px;
+    }
+}

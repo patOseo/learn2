@@ -73,13 +73,13 @@ $description = get_field('description');
                                 <h2><?php echo $p->post_title; ?></h2>
                                 <p><?php echo wp_trim_words($p->post_excerpt, 30); ?></p>
                             </div>
-                            <a href="<?php echo get_the_permalink($p->ID); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</a>
+                            <a href="<?php echo get_the_permalink($p->ID); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4 stretched-link">read more</a>
                         </div>
                     </div>
                 </div>
                 <?php endforeach; ?>
                 <div class="col-12 text-center">
-                    <a href="#" class="align-items-center cta d-inline-flex justify-content-center lightblue text-uppercase text-white mt-4">View More Programs in <?php echo $select_category->name; ?></a>
+                    <a href="<?php the_field('main_category_page', $select_category); ?>" class="align-items-center cta d-inline-flex justify-content-center lightblue text-uppercase text-white mt-4">View More Programs in <?php echo $select_category->name; ?></a>
                 </div>
             </div>
         </div>

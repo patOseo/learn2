@@ -30,7 +30,7 @@ $button_link = get_field('button_link');
 <section class="promotional-hero" style="background-image: url(<?= $background_image; ?>);">
     <div class="container-xl text-center">
         <?= $description; ?>
-        <a href="/unique-solution/" class="align-items-center bigger bod cta d-inline-flex px-5 shadow text-uppercase white"><?= $button; ?></a>
+        <a href="<?= $button_link; ?>" class="align-items-center bigger bod cta d-inline-flex px-5 shadow text-uppercase white"><?= $button; ?></a>
         <div class="client-list-pic">
             <img src="<?= $front_image; ?>" alt="" class="w-100">
         </div>

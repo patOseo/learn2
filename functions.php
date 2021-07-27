@@ -1,8 +1,9 @@
 <?php
 
-
+add_theme_support('align-wide');
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'my-custom-image-size', 640, 999 );
+add_image_size( 'program-view', 363, 204, true);
 the_post_thumbnail( 'my-custom-image-size' );
 
 
@@ -78,6 +79,16 @@ function theme_widget() {
         'name'          => esc_html__( 'Footer Logo Section Text', 'learn2' ),
         'id'            => 'footer-logo-section-text',
         'description'   => esc_html__( 'Footer Contact Section', 'learn2' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => esc_html__( 'Blog Sidebar', 'learn2' ),
+        'id'            => 'blog-sidebar',
+        'description'   => esc_html__( 'Blog Sidebar', 'learn2' ),
         'before_widget' => '',
         'after_widget'  => '',
         'before_title'  => '<h2 class="widget-title">',
@@ -583,6 +594,72 @@ function my_acf_init_block_types() {
             'keywords'          => array( 'orchestrate-footer-block' ),
         ));
 
+        acf_register_block_type(array(
+            'name'              => 'programs-block',
+            'title'             => __('Programs Block'),
+            'description'       => __('programs-block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/programs-block.php',
+            'category'          => 'layout',
+            'icon'              => 'tablet',
+            'keywords'          => array( 'programs' ),
+            'mode'              => 'edit'
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'faq-block',
+            'title'             => __('FAQ Block'),
+            'description'       => __('faq-block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/faq-block.php',
+            'category'          => 'layout',
+            'icon'              => 'menu-alt3',
+            'keywords'          => array( 'faq', 'accordion' ),
+            'mode'              => 'edit'
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'cta-block',
+            'title'             => __('CTA Block'),
+            'description'       => __('cta-block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/cta-block.php',
+            'category'          => 'layout',
+            'icon'              => 'button',
+            'keywords'          => array( 'cta', 'contact', 'call to action' ),
+            'mode'              => 'edit'
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'counter-block',
+            'title'             => __('Counter'),
+            'description'       => __('counter-block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/counter-block.php',
+            'category'          => 'layout',
+            'icon'              => 'dashboard',
+            'keywords'          => array( 'number', 'counter' ),
+            'mode'              => 'edit'
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'promo-boxes-block',
+            'title'             => __('Promo Boxes'),
+            'description'       => __('promo-boxes-block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/promo-boxes-block.php',
+            'category'          => 'layout',
+            'icon'              => 'columns',
+            'keywords'          => array( 'boxes', 'promo' ),
+            'mode'              => 'edit'
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'timeline-block',
+            'title'             => __('Timeline'),
+            'description'       => __('timeline-block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/timeline-block.php',
+            'category'          => 'layout',
+            'icon'              => 'clock',
+            'keywords'          => array( 'timeline' ),
+            'mode'              => 'edit'
+        ));
+
 
 
 
@@ -662,13 +739,13 @@ function register_custom_post_types() {
     $program_args = array(
         'labels' => $progam_label,
         'public' => true,
-        'has_archive' => true,
+        'has_archive' => false,
         'show_ui' => true,
         'capability_type' => 'post',
 		'show_in_rest' => true,
 		'rest_base' => '',
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
-        'hierarchical' => true,
+        'hierarchical' => false,
         'rewrite' => array('slug' => 'programs'),
         'query_var' => true,
         'menu_icon' => 'dashicons-align-center',
@@ -733,3 +810,15 @@ function register_custom_post_types() {
 }
 add_action( 'init', 'register_custom_post_types' );
 
+
+
+// Setting page template for Gutenberg blocks
+// function set_page_block_template() {
+//     $post_type_object = get_post_type_object( 'page' );
+//     $post_type_object->template = array(
+//         array( 'core/cover', array('url' => '/wp-content/uploads/2021/07/daria-nepriakhina-235583.jpeg', 'align' => 'full'), array(array('core/heading', array('level' => '1', 'content' => 'Add H1 page title here...'))) ),
+//         array( 'core/columns', array(), array(array('core/column', array('width' => '100%'))) ),
+//     );
+//     $post_type_object->template_lock = 'all';
+// }
+// add_action( 'init', 'set_page_block_template' );

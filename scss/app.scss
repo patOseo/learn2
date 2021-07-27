@@ -1,12 +1,35 @@
 @import 'fonts';
 @import 'variables';
 @import 'mixins';
+@import 'typography';
 @import 'header';
 @import 'jumbo';
+@import 'hero';
 @import 'view';
 @import 'gobar';
-@import 'contact-meta';
+@import 'members';
+@import 'blog';
+@import 'content';
+@import 'forms';
+@import 'contact';
+@import 'proprogram';
+@import 'program';
+@import 'onlycopy';
+@import 'slide';
+@import 'call';
+@import 'getcert';
+@import 'landing';
+@import 'bio';
+@import 'timeline';
 @import 'footer';
 .container {
-    max-width: 1080px;
+    max-width: 1200px;
+}
+
+body {
+    &.landing {
+        background: url(../images/bg-nie-gold-mine-1.jpg);
+        // background-size: cover;
+        position: relative;
+    }
 }

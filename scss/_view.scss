@@ -1,44 +1,286 @@
 .sec {
-    padding: 60px 0;
+    padding: 30px 0;
+    @include min-screens {
+        padding: 40px 0;
+    }
+    @include min-screens(1200px) {
+        padding: 60px 0;
+    }
     @include min-screens(1025px) {
         .row {
             --bs-gutter-x: 2.5em;
         }
     }
     h2 {
-        color: #353841;
-        font: 700 36px $pop;
-        letter-spacing: 8px;
-        margin-bottom: 60px;
+        color: $grey;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        @include min-screens {
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+        }
+        @include min-screens(992px) {
+            letter-spacing: 8px;
+            margin-bottom: 60px;
+        }
+    }
+    p {
+        +h2 {
+            margin-bottom: 20px;
+            margin-top: 30px;
+            @include min-screens {
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+        }
+        +h3 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            @include min-screens {
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+        }
     }
     .box {
+        position: relative;
         .yt-place,
         .img-place {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            @include min-screens {
+                margin-bottom: 25px;
+            }
         }
         h3 {
-            color: #ff6900;
-            font: 700 20px $pop;
-            letter-spacing: 8px;
+            color: $orange;
+            letter-spacing: 2px;
+            @include min-screens {
+                letter-spacing: 8px;
+            }
         }
         h4 {
-            color: #000;
+            color: $black;
             font: 12px $pop;
-            letter-spacing: 8px;
+            letter-spacing: 2px;
+            @include min-screens {
+                letter-spacing: 8px;
+            }
+        }
+        @include max-screens {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover {
+            .cta.lightblue {
+                background-color: $orange;
+            }
+        }
+    }
+    .featured {
+        .box {
+            .img-feature {
+                border-radius: 10px;
+                box-shadow: 0px 2px 18px 0px rgba($black, 0.3);
+                margin-top: 30px;
+                overflow: hidden;
+                position: relative;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    transition: all .3s ease-in-out;
+                }
+                h2 {
+                    bottom: 50%;
+                    color: $yellow;
+                    font: 30px $right;
+                    left: 0;
+                    letter-spacing: 2px;
+                    padding: 0 15px;
+                    position: absolute;
+                    transform: translateY(50%);
+                    width: 100%;
+                }
+                &:before {
+                    display: block;
+                    content: "";
+                    padding-top: 56.25%;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+    .head {
+        margin-bottom: 50px;
+        padding: 20px 0;
+        h2 {
+            margin: 0;
+            @include min-screens {
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+        }
+        &.red {
+            background: linear-gradient(left bottom, #e34d67, #f6653c);
+        }
+    }
+    &.contact-meta {
+        padding-bottom: 30px;
+        h2 {
+            margin: 20px 0 10px;
+            @include min-screens {
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+        }
+        h3 {
+            @include min-screens {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    &.intro {
+        h3 {
+            color: $grey;
+            @include min-screens {
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
         }
         p {
-            color: #555;
-            font: 18px/1.7 $pop;
-            margin: 20px 0 0 0;
+            @include min-screens {
+                font-size: 20px;
+            }
+            @include min-screens(992px) {
+                font-size: 24px;
+                margin: 20px 0 0 0;
+            }
+        }
+        li {
+            @include min-screens {
+                font: 24px/1.7 $pop;
+            }
+        }
+        @include min-screens(992px) {
+            .acc-public {
+                .acc-box {
+                    .acc-head {
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                    .acc-content {
+                        p,
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.content {
+        h2 {
+            margin-top: 30px;
+            @include min-screens {
+                margin-top: 60px;
+                margin-bottom: 40px;
+            }
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        h3 {
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            @include min-screens {
+                font-size: 24px;
+                letter-spacing: 8px;
+                margin-top: 40px;
+            }
+        }
+        @include min-screens {
+            p {
+                font-size: 20px;
+            }
         }
     }
     &.blog {
         h3 {
             a {
-                color: #353841;
+                color: $grey;
                 text-decoration: none;
             }
         }
+    }
+    &.blackgrad {
+        background: radial-gradient(circle at center,#757575 0%,#0a0000 100%);
+    }
+    &.bluegrad {
+        background: radial-gradient(ellipse at center, #2ea3f2 0%, #1d5d99 100%);
+        h1,
+        h2,
+        h3,
+        p {
+            color: $white;
+        }
+    }
+    &.orangegrad {
+        background: linear-gradient(to bottom, #f16a1f 0%, #821425 100%);
+        h1,
+        h2,
+        h3,
+        p {
+            color: $white;
+        }
+    }
+    &.bluewhitegrad {
+        background: linear-gradient(to bottom, #2ea3f2 0%, #fff 100%);
+    }
+    &.greenwhitegrad {
+        background: linear-gradient(180deg,#26bf42 0%,#ffffff 100%);
+    }
+    &.orangewhitegrad {
+        background: linear-gradient(180deg,#f98500 0%,#ffffff 100%);
+    }
+    &.purplewhitegrad {
+        background: linear-gradient(180deg,#8300e9 0%,#ffffff 100%);
+    }
+    &.bubble {
+        background-image: url(../images/Resources-Page-Materials-long-20191017-v5.png);
+        background-size: cover;
+        background-position: center;
+    }
+    &.grey,&.greyblue {
+        background-color: $grey;
+        h1,
+        h2,
+        h3,
+        p {
+            color: $white;
+        }
+        p {
+            a {
+                color: $orange;
+            }
+        }
+    }
+    &.greyblue {
+        background-color: #414651 !important;
     }
 }
 
@@ -55,5 +297,90 @@
         display: block;
         content: "";
         padding-top: 56.25%;
+    }
+}
+
+.cta-list {
+    margin-top: 30px;
+    @include min-screens {
+        margin-top: 50px;
+        .cta {
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+    }
+    &.row {
+        --bs-gutter-x: 0.25em;
+    }
+    [class*="col-"] {
+        margin-bottom: calc(var(--bs-gutter-x) * 1);
+    }
+}
+
+.callsec {
+    hr {
+        margin-bottom: 20px;
+        margin-top: 0;
+        @include min-screens {
+            margin-bottom: 40px;
+        }
+    }
+    h2 {
+        margin-bottom: 15px;
+        @include min-screens {
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    .box {
+        border: 1px solid #d8d8d8;
+        .copy {
+            border-top: 1px solid #d8d8d8;
+            padding: 15px;
+            @include min-screens {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                @include min-screens {
+                    margin-bottom: 20px;
+                }
+            }
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+    [class*="col-"] {
+        margin-top: 30px;
+        @include min-screens {
+            margin-top: 45px;
+        }
+    }
+}
+
+.col-meta {
+    .box {
+        .icon {
+            color: $orange;
+            font-size: 42px;
+            margin-bottom: 25px;
+        }
+        h2 {
+            letter-spacing: normal;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.4;
+            font-size: 20px;
+            &.meta-user {
+                font-size: 16px;
+            }
+        }
     }
 }

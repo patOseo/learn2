@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2QJPQS');</script>
+<!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,15 +56,16 @@
                         wp_nav_menu( $args ); 
                         ?>
 
-                         
+                <!-- 
                 <div class="icon d-md-none" id="navcall" id="navcall">
                     <div class="ham"><span></span><span></span><span></span></div>
                     <div class="icon-cross">&#x2715;</div>
                 </div>
                 <div class="srhbox" id="srhbox">
-                    <?= do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
+                    <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
                 </div>
                <div class="d-flex srhcall" id="srhcall"><i class="fa fa-search" aria-hidden="true"></i></div>
+                -->
             </div>
         </nav>
     </header>

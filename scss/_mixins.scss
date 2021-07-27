@@ -11,33 +11,85 @@
 }
 
 @mixin cta {
+    padding: 10px 15px;
+    border: 0;
     border-radius: 3px;
-    color: #1e83ec;
-    font: 700 15px $lato;
-    letter-spacing: 4px;
-    padding: 15px 20px;
+    color: $linkblue;
+    font: 700 13px $pop;
+    letter-spacing: 1px;
     text-decoration: none;
-    transition: all .3s ease-in-out;
+    transition: all 0.2s;
+    @include min-screens {
+        font-size: 15px;
+        letter-spacing: 4px;
+        padding: 15px 20px;
+        white-space: nowrap;
+    }
     .icon {
         margin-right: 8px;
         svg {
-            fill: #fff;
+            fill: $white;
         }
     }
     &.white {
-        background-color: #fff;
+        background-color: $white;
     }
     &.blue {
-        background-color: #0c71c3;
+        background-color: $blue;
     }
     &.gold {
-        background-color: #f7a57c;
+        background-color: $gold;
+    }
+    &.red {
+        background-color: $red;
     }
     &.lightblue {
-        background: #2ea3f2;
+        background: $linkblue;
+    }
+    &.orange {
+        background: $orange;
+        &:hover {
+            background: $blue;
+        }
+    }
+    &.orangegrad {
+        background: linear-gradient(180deg, #e09900 0%, #e40028 100%);
+        &:hover {
+            background: linear-gradient(180deg, #e40028 0%, #e09900 100%);
+        }
+    }
+    &.bod {
+        border: 2px solid $orange;
+    }
+    &.bodred {
+        border: 2px solid $red;
+    }
+    &.white-red-text {
+        color: $white;
+        &:hover {
+            color: $red!important;
+        }
+    }
+    &.red-white-text {
+        color: $red;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.red-white-color {
+        background: $red;
+        &:hover {
+            background: $white;
+        }
+    }
+    &.bigger {
+        font-size: 14px;
+        @include min-screens {
+            font-size: 20px;
+        }
     }
     &:hover {
-        background: #f16a1f;
-        color: #fff!important;
+        background: $orange;
+        color: $white!important;
     }
 }

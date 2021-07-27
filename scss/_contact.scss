@@ -1,0 +1,34 @@
+.img-person {
+    border-radius: 50%;
+    height: 260px;
+    overflow: hidden;
+    width: 260px;
+}
+
+.contact-form {
+    label {
+        color: $grey;
+        font: 700 18px $pop;
+    }
+    .form-check {
+        margin-top: 10px;
+    }
+    .form-check-label {
+        font-weight: 400;
+    }
+    .form-control {
+        border-radius: 0;
+        color: $black;
+        font: 18px $pop;
+        height: 44px;
+    }
+    textarea.form-control {
+        height: 120px;
+    }
+    p {
+        font-size: 16px;
+    }
+    [class*="col-"] {
+        margin-top: 30px;
+    }
+}

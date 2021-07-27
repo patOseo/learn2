@@ -1,0 +1,51 @@
+h1, .h1 {
+    font: 700 40px $pop;
+    @include min-screens {
+        font-size: 50px;
+    }
+    @include min-screens(992px) {
+        font-size: 60px;
+    }
+}
+
+h2, .h2 {
+    font: 700 26px $pop;
+    @include min-screens {
+        font-size: 30px;
+    }
+    @include min-screens(992px) {
+        font-size: 36px;
+    }
+}
+
+h3 {
+    font: 700 20px $pop;
+}
+
+p {
+    color: rgba($black, 0.6);
+    font: 16px/1.7 $pop;
+    margin: 15px 0 0 0;
+    @include min-screens {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    a {
+        color: $linkblue;
+        text-decoration: none;
+    }
+}
+
+li {
+    color: rgba($black, 0.6);
+    font: 16px/1.7 $pop;
+    @include min-screens {
+        font-size: 18px;
+    }
+}
+
+.text-light {
+    p {
+        color: $white;
+    }
+}

@@ -19,12 +19,13 @@ if( !empty($block['align']) ) {
 
 $left_side_image = get_field('left_side_image');
 $left_side_description = get_field('left_side_description');
+$right_side_description = get_field('right_side_description');
 $book_form_shortcode = get_field('book_form_shortcode');
 
 
 ?>
 
-<section class="sec contact">
+<section class="sec contact bubble">
     <div class="container">
         <div class="row">
             <div class="col-md-5 col-lg-4 pe-xl-5">
@@ -36,7 +37,7 @@ $book_form_shortcode = get_field('book_form_shortcode');
                 </div>
             </div>
             <div class="col-md-7 col-lg-8 contact-form">
-            
+                    <?= $right_side_description; ?>
                     <?= do_shortcode(''.$book_form_shortcode.''); ?>
             </div>
         </div>

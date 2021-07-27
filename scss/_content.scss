@@ -1,0 +1,42 @@
+.wp-block-columns {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 0;
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	h2 {
+		margin-top: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.wp-block-column {
+		@include max-screens {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+}
+
+.wp-block-button {
+	margin: 1rem 0;
+	a {
+		@include cta;
+		max-width: 100%;
+		text-transform: uppercase;
+		letter-spacing: 3px !important;
+		background: $orange;
+        &:hover {
+            background: $blue;
+        }
+	}
+}
+
+.wp-block-cover {
+	h1, h2 {
+		text-transform: uppercase;
+	}
+}

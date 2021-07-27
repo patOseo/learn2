@@ -1,0 +1,56 @@
+.promotional-hero {
+    background-position: bottom center;
+    background-size: cover;
+    padding: 30px 0;
+    @include min-screens {
+        padding: 60px 0;
+    }
+    h1 {
+        font: 700 36px $right;
+        letter-spacing: 8px;
+        margin-bottom: 30px;
+        @include min-screens {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+    }
+    h2 {
+        color: $grey;
+        @include min-screens {
+            letter-spacing: 8px;
+            margin-bottom: 100px;
+        }
+    }
+    p {
+        color: $grey;
+        @include min-screens {
+            font: 24px/1.7 $pop;
+            margin: 20px 0 0 0;
+        }
+        &::first-child {
+            margin-top: 0;
+        }
+    }
+    .cta {
+        margin: 30px 0 0;
+        @include min-screens {
+            margin-top: 120px;
+        }
+    }
+}
+
+.client-list-pic {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    @include min-screens {
+        margin-bottom: 40px;
+        margin-top: 150px;
+    }
+}
+
+.high-cta {
+    margin: 40px 0;
+    @include min-screens {
+        margin: 100px 0;
+    }
+}

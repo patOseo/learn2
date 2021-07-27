@@ -1,0 +1,96 @@
+.get-acc {
+    h2 {
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    @include min-screens {
+        p {
+            &.bigger {
+                font-size: 20px;
+            }
+        }
+    }
+    .acc-box {
+        background: $white;
+        border: 1px solid rgba($black, 0.2);
+        margin-bottom: 20px;
+        @include min-screens {
+            margin-bottom: 30px;
+        }
+        .acc-head {
+            background: rgba($black, 0.05);
+            cursor: pointer;
+            position: relative;
+            padding: 15px 35px 15px 15px;
+            @include min-screens {
+                padding: 20px 40px 20px 20px;
+            }
+            h2 {
+                color: $orange;
+                font-size: 20px;
+                margin: 0;
+                letter-spacing: normal;
+            }
+            .arrow {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                bottom: 50%;
+                right: 15px;
+                transform: translateY(50%);
+                &:before,
+                &:after {
+                    background: $orange;
+                    bottom: 50%;
+                    border-radius: 5px;
+                    content: '';
+                    position: absolute;
+                    right: 50%;
+                    transform: translate(50%, 50%);
+                }
+                &:after {
+                    height: 16px;
+                    width: 2px;
+                }
+                &:before {
+                    height: 2px;
+                    width: 16px;
+                }
+            }
+        }
+        .acc-content {
+            display: none;
+            padding: 15px;
+            @include min-screens {
+                padding: 20px;
+            }
+            p {
+                color: rgba($black, 0.6);
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+            ul {
+                padding-left: 20px;
+            }
+        }
+        &.clicked {
+            .acc-head {
+                .arrow {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pic {
+    border: 1px solid rgba($black, 0.4);
+    margin-bottom: 30px;
+}
+
+.acc-public {
+    @extend .get-acc;
+}

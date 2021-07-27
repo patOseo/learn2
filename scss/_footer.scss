@@ -1,12 +1,128 @@
-.copyright {
-    background: #3d3d3d;
-    padding: 15px 0;
-    p {
-        font: 14px $pop;
-        letter-spacing: 4px;
+.footer {
+    background-image: url(../images/foot-bg.jpg);
+    background-position: 50%;
+    background-size: cover;
+    padding: 30px 0 0;
+    .social {
+        padding-bottom: 30px;
+        ul {
+            li {
+                a {
+                    color: $white;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .foot-contact {
+        padding-bottom: 30px;
+        @include min-screens {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+        .img {
+            width: 150px;
+        }
+        h2 {
+            color: $white;
+            font-size: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            @include min-screens {
+                letter-spacing: 5px;
+            }
+        }
+        h3 {
+            color: $white;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            @include min-screens {
+                letter-spacing: 5px;
+            }
+        }
+        h4 {
+            color: $white;
+            font: 18px $pop;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            @include min-screens {
+                letter-spacing: 2px;
+            }
+        }
+        .cta {
+            color: $white;
+            border: 1px solid $white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            &:hover {
+                background: $white;
+                color: $black!important;
+            }
+        }
+    }
+    .copyright {
+        background: $grey;
+        padding: 15px 0;
+        p {
+            color: $white;
+            font: 10px/2 $pop;
+            letter-spacing: 2px;
+            @include min-screens(1025px) {
+                font-size: 14px;
+                letter-spacing: 4px;
+                line-height: normal;
+            }
+        }
     }
     a {
         color: inherit;
         text-decoration: none;
+    }
+}
+
+.backtop {
+    background: rgba($black, 0.4);
+    border-radius: 5px 0 0 5px;
+    bottom: 125px;
+    color: $white;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    height: 40px;
+    line-height: 1;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    width: 40px;
+    z-index: 99999;
+    &.moveright {
+        opacity: 0;
+        animation: fadeOutRight 1s cubic-bezier(.77, 0, .175, 1) 1;
+    }
+    &.moveleft {
+        opacity: 1;
+        animation: fadeInRight 1s cubic-bezier(.77, 0, .175, 1) 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fadeOutRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%)
     }
 }
