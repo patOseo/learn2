@@ -58,11 +58,11 @@ $description = get_field('description');
                     array(
                         'taxonomy' => 'program',
                         'terms'    => $select_category->term_id,
-                        'order' => 'ASC',
-                        'orderby' => 'menu_order',
                         'include_children' => false
                     ),
-                )
+                ),
+                'order' => 'ASC',
+                'orderby' => 'menu_order'
             ];
             $posts = get_posts($args);
             foreach( $posts as $p ):
