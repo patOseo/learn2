@@ -69,7 +69,7 @@ $description = get_field('description');
             ?>
                 <div class="col-md-4">
                     <div class="box d-flex flex-column h-100 justify-content-between">
-                        <div class="img"><img src="<?php echo get_the_post_thumbnail_url($p->ID); ?>" alt="" class="w-100"></div>
+                        <div class="img"><img src="<?php echo get_the_post_thumbnail_url($p->ID, 'program-view'); ?>" alt="" class="w-100"></div>
                         <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
                             <div class="text">
                                 <h2><?php echo $p->post_title; ?></h2>
