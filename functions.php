@@ -718,6 +718,49 @@ function register_custom_post_types() {
     register_post_type( 'testimonial', $args );
 
 
+
+    // set up Staff labels
+    $staff_labels = array(
+        'name' => 'Staff',
+        'singular_name' => 'Staff Member',
+        'add_new' => 'Add New Staff Member',
+        'add_new_item' => 'Add Staff Member',
+        'edit_item' => 'Edit Staff',
+        'new_item' => 'New Staff',
+        'all_items' => 'All Staff',
+        'view_item' => 'View Staff',
+        'search_items' => 'Search Staff',
+        'not_found' =>  'No Staff Found',
+        'not_found_in_trash' => 'No Staff found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Staff',
+    );
+    
+    // register post type
+    $staff_args = array(
+        'labels' => $staff_labels,
+        'public' => true,
+        'has_archive' => false,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'team'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-groups',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'revisions',
+            'page-attributes'
+        )
+    );
+    register_post_type( 'staff', $staff_args );
+
+
+
     // set up Testimonial labels
     $progam_label = array(
         'name' => 'Programs',
