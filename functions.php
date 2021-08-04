@@ -723,7 +723,7 @@ function register_custom_post_types() {
     $staff_labels = array(
         'name' => 'Staff',
         'singular_name' => 'Staff Member',
-        'add_new' => 'Add New Staff Member',
+        'add_new' => 'Add New Staff',
         'add_new_item' => 'Add Staff Member',
         'edit_item' => 'Edit Staff',
         'new_item' => 'New Staff',
@@ -743,8 +743,11 @@ function register_custom_post_types() {
         'has_archive' => false,
         'show_ui' => true,
         'capability_type' => 'post',
+        'show_in_rest' => true,
+        'rest_base' => '',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
         'hierarchical' => false,
-        'rewrite' => array('slug' => 'team'),
+        'rewrite' => array('slug' => 'staff'),
         'query_var' => true,
         'menu_icon' => 'dashicons-groups',
         'supports' => array(
@@ -753,7 +756,10 @@ function register_custom_post_types() {
             'excerpt',
             'trackbacks',
             'custom-fields',
+            'comments',
             'revisions',
+            'thumbnail',
+            'author',
             'page-attributes'
         )
     );
