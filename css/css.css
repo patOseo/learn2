@@ -1307,12 +1307,12 @@ li {
     background: rgba(255, 255, 255, 0.2);
     display: none;
     padding: 15px; }
-    .accordions .acc-box .acc-content p {
+    .accordions .acc-box .acc-content p, .accordions .acc-box .acc-content ul li {
       color: #fff;
       font-size: 16px;
       line-height: 1.4;
       margin-top: 15px; }
-      .accordions .acc-box .acc-content p:first-child {
+      .accordions .acc-box .acc-content p:first-child, .accordions .acc-box .acc-content ul li:first-child {
         margin-top: 0; }
     .accordions .acc-box .acc-content a {
       color: #f25000; }
