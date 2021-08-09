@@ -45,7 +45,7 @@ $sidebar = get_field('sidebar');
                 <div class="col-md-6">
                 
                     <?php if(!empty($image)) : ?>
-                     <div class="program-img"><img src="<?= $image; ?>" alt="" class="w-100"></div>
+                     <div class="program-img"><?php echo wp_get_attachment_image($image, 'full', "", ["class" => "w-100"]); ?><!-- <img src="<?= $image; ?>" alt="" class="w-100"> --></div>
                     <?php endif; ?>
 
                     <?php if(!empty($video)) : ?>
