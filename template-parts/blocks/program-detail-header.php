@@ -33,7 +33,7 @@ $sidebar = get_field('sidebar');
 
 <section class="sec intro bluewhitegrad">
     <div class="container">
-        <h2 class="text-center text-uppercase"><?= $heading; ?></h2>
+        <h1 class="text-center text-uppercase h2"><?= $heading; ?></h2>
         <div class="row">
             <div class="align-self-center col-md-6">
                 <h3 class="text-uppercase"><?= $side_heading; ?></h3>

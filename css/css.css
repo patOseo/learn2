@@ -596,16 +596,16 @@ li {
   @media (min-width: 1025px) {
     .sec .row {
       --bs-gutter-x: 2.5em; } }
-  .sec h2 {
+  .sec h2, .sec .h2 {
     color: #2b2b2b;
     letter-spacing: 2px;
     margin-bottom: 30px; }
     @media (min-width: 768px) {
-      .sec h2 {
+      .sec h2, .sec .h2 {
         letter-spacing: 4px;
         margin-bottom: 40px; } }
     @media (min-width: 992px) {
-      .sec h2 {
+      .sec h2, .sec .h2 {
         letter-spacing: 8px;
         margin-bottom: 60px; } }
   .sec p + h2 {
