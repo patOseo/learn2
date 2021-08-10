@@ -2,6 +2,7 @@
 
 add_theme_support('align-wide');
 add_theme_support( 'post-thumbnails' );
+add_theme_support('responsive-embeds');
 add_image_size( 'my-custom-image-size', 640, 999 );
 add_image_size( 'program-view', 363, 204, true);
 the_post_thumbnail( 'my-custom-image-size' );
