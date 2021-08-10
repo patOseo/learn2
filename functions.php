@@ -744,8 +744,8 @@ function register_custom_post_types() {
         'has_archive' => false,
         'show_ui' => true,
         'capability_type' => 'post',
-        'show_in_rest' => true,
-        'rest_base' => '',
+        // 'show_in_rest' => true,
+        // 'rest_base' => '',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
         'hierarchical' => false,
         'rewrite' => array('slug' => 'staff'),
@@ -753,12 +753,9 @@ function register_custom_post_types() {
         'menu_icon' => 'dashicons-groups',
         'supports' => array(
             'title',
-            'editor',
-            'excerpt',
             'trackbacks',
             'custom-fields',
             'comments',
-            'revisions',
             'thumbnail',
             'author',
             'page-attributes'
