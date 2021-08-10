@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <title>Learn2 – A Team Building Company that Inspires Real Change</title>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <header class="header shadow">
     <div class="d-none d-md-flex justify-content-end top-nav">
         <?php 
