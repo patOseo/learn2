@@ -9,6 +9,22 @@
        $img   	    = get_field('profile_image');
        $email 		= get_field('email');
        $color 		= get_field('natural_approach');
+       $colorurl 	= null;
+
+       switch ($color) {
+       		case 'green':
+       			$colorurl = '/how-you-impact-other-people-green-planets/';
+       			break;
+       		case 'blue':
+       			$colorurl = '/how-you-impact-other-people-blue-oceans/';
+       			break;
+       		case 'orange':
+       			$colorurl = '/how-you-impact-other-people-orange-skies/';
+       			break;
+       		case 'yellow':
+       			$colorurl = '/how-you-impact-other-people-gold-mines/';
+       			break;
+       }
 ?>
 		
 		<section class="sec bio <?php echo $color; ?>">
@@ -19,10 +35,10 @@
 		                    <?php echo wp_get_attachment_image($img, 'full', '', array('class' => 'w-100 h-auto')); ?>
 		                </div>
 		            </div>
-		            <div class="col-md-6 mt-4 mt-md-0">
+		            <div class="col-md-6 mt-4 mt-md-0 align-self-center">
 		                <div class="bio-info">
 		                    <div class="img">
-		                        <!-- <img src="<?= $img_src2; ?>" alt="" class="icon"> -->
+		                        <a href="<?= $colorurl; ?>"><img src="/wp-content/uploads/<?= $color; ?>.png" alt="<?= $color; ?>" class="icon"></a>
 		                    </div>
 		                    <div class="meta text-center">
 		                        <h2><?php the_title(); ?></h2>
@@ -54,7 +70,7 @@
     	       
     <?php if ($args -> have_posts()) : ?>  
        <section class="sec blog">
-       <h2 class="text-center text-uppercase">Recent Posts</h2>
+       <h2 class="text-center text-uppercase">Recent Posts by <?php the_title(); ?></h2>
        <div class="container-xl">
            <div class="row">
 

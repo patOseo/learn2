@@ -55,7 +55,11 @@
             .bio-info {
                 .img {
                     border-color: $green;
-                    box-shadow: inset 0 0 15px rgba($green, 0.9);
+                    transition: .2s;
+                    &:hover {
+                        box-shadow: inset 0 0 15px rgba($green, 0.9);
+                    }
+                    
                 }
                 a {
                     color: $green;
@@ -69,7 +73,12 @@
             .bio-info {
                 .img {
                     border-color: $yellow;
-                    box-shadow: inset 0 0 15px rgba($yellow, 0.9);
+                    transition: .2s;
+
+                    &:hover {
+                        box-shadow: inset 0 0 15px rgba($yellow, 0.9);
+                    }
+                    
                 }
                 a {
                     color: $yellow;
@@ -83,7 +92,12 @@
             .bio-info {
                 .img {
                     border-color: $blue;
-                    box-shadow: inset 0 0 15px rgba($blue, 0.9);
+                    transition: .2s;
+
+                    &:hover {
+                        box-shadow: inset 0 0 15px rgba($blue, 0.9);
+                    }
+                    
                 }
                 a {
                     color: $blue;
@@ -97,7 +111,12 @@
             .bio-info {
                 .img {
                     border-color: $orange;
-                    box-shadow: inset 0 0 15px rgba($orange, 0.9);
+                    transition: .2s;
+
+                    &:hover {
+                        box-shadow: inset 0 0 15px rgba($orange, 0.9);
+                    }
+                    
                 }
                 a {
                     color: $orange;
