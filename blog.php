@@ -30,12 +30,15 @@ get_header();
 	    		<?php 
 	    		    while ($wpb_all_query-> have_posts() ) :
 	    			$wpb_all_query -> the_post();
+	    			$blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
+	    			$defimg = get_field('default_featured_image', 600);
+
 	    		?>
 	    		    			            
 			        <div class="col-md-4">
 		                <div class="box d-flex flex-column h-100 justify-content-between">
 		                    <div class="img">
-	                        	 <img src="<?= get_the_post_thumbnail_url('','medium'); ?>" alt="" class="w-100">
+	                        	 <?php if($blogimg): echo $blogimg; else: echo wp_get_attachment_image($defimg, 'program-view', '', array('class' => 'w-100 h-auto')); endif; ?>
 	                        </div>
 		                    <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
 		                    	<div class="text">

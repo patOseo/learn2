@@ -76,18 +76,20 @@
 
 			     	<?php  while ($args-> have_posts() ) :
 			     		$args->the_post();
+			     		$blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
+	    				$defimg = get_field('default_featured_image', 600);
 			     	?>
 	         
 			        <div class="box col-md-4 d-flex flex-column justify-content-between">
 			            <div class="upper">
 			                <?php $image_src = get_the_post_thumbnail_url(get_the_ID()); ?>
 			                <div class="img-place">
-			                    <a href="#"><img src="<?= $image_src; ?>" alt="" class="w-100"></a>
+			                    <?php if($blogimg): echo $blogimg; else: echo wp_get_attachment_image($defimg, 'program-view', '', array('class' => 'w-100 h-auto')); endif; ?>
 			                </div>
-			                <h3 class="text-uppercase"><a href="<?= get_permalink(); ?>"><?= get_the_title(); ?></a></h3>
+			                <h3 class="text-uppercase"><a href="<?= get_permalink(); ?>" class="stretched-link"><?= get_the_title(); ?></a></h3>
 			                <p><?= get_the_excerpt();  ?></p>
 			            </div>
-			            <a href="<?= get_permalink(); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</a>
+			            <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
 			        </div>
 	         
 	            <?php endwhile; ?>
