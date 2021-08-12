@@ -38,7 +38,7 @@
                 <div class="col-md-8">
                     <div class="heading">
                         <h1 class="text-uppercase"><?= get_the_title(); ?></h1>
-                        <h3>By <a href="#"><?= ucfirst(get_the_author()); ?></a></h3>
+                        <h3>By <?= ucfirst(get_the_author()); ?></h3>
                     </div>
                     <div class="blog-content">
                         <?php the_content();  ?>
