@@ -72,10 +72,10 @@ $description = get_field('description');
                         <div class="img"><img src="<?php echo get_the_post_thumbnail_url($p->ID, 'program-view'); ?>" alt="" class="w-100"></div>
                         <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
                             <div class="text">
-                                <h2><?php echo $p->post_title; ?></h2>
+                                <h2><a href="<?php echo get_the_permalink($p->ID); ?>" class="stretched-link"><?php echo $p->post_title; ?></a></h2>
                                 <p><?php echo wp_trim_words($p->post_excerpt, 30); ?></p>
                             </div>
-                            <a href="<?php echo get_the_permalink($p->ID); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4 stretched-link">read more</a>
+                            <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
                         </div>
                     </div>
                 </div>

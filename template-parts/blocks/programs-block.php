@@ -29,10 +29,10 @@ $programs = new WP_Query($args);
                     <div class="img"><img src="<?php echo the_post_thumbnail_url('program-view'); ?>" alt="<?php the_title(); ?>" class="w-100"></div>
                     <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
                         <div class="text">
-                            <h2><?php the_title(); ?></h2>
+                            <h2><a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
                             <p><?php echo wp_trim_words(the_excerpt(), 30); ?></p>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4 stretched-link">read more</a>
+                        <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
                     </div>
                 </div>
             </div>
