@@ -84,3 +84,49 @@
             </div>
         </div>
     </section>
+
+<?php 
+    $categories = get_the_category();
+    $catslugs = wp_list_pluck($categories, 'slug');
+    
+    
+    $progargs = array(
+        'post_type' => 'programs',
+        'posts_per_page' => 3,
+        'orderby' => array( 'menu_order' => 'ASC' ),
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'program',
+                'field'    => 'slug',
+                'terms'    => $catslugs,
+                'include_children' => false
+            ),
+        )
+    );
+
+    $relatedprogs = new WP_Query($progargs);
+?>
+
+<?php if($relatedprogs->have_posts()): ?>
+    <section class="sec callsec">
+        <div class="container">
+            <div class="row">
+                <h2 class="mx-auto text-uppercase text-center">Related Programs</h2>
+                <?php while($relatedprogs->have_posts()): $relatedprogs->the_post(); ?>
+                    <div class="col-md-4">
+                        <div class="box d-flex flex-column h-100 justify-content-between">
+                            <div class="img"><img src="<?php echo the_post_thumbnail_url('program-view'); ?>" alt="<?php the_title(); ?>" class="w-100"></div>
+                            <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
+                                <div class="text">
+                                    <h2><a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+                                    <p><?php echo wp_trim_words(the_excerpt(), 30); ?></p>
+                                </div>
+                                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
