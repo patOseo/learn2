@@ -128,11 +128,11 @@
                         </div>
                     </div>
                 <?php endwhile; ?>
-                <div class="col-12 text-center">
+                <!-- <div class="col-12 text-center">
                     <?php foreach($categories as $category): ?>
                     <a href="/<?php echo $category->slug; ?>/" class="align-items-center cta d-inline-flex justify-content-center lightblue text-uppercase text-white mt-4">View More Programs in <?php echo $category->name; ?></a>
                     <?php endforeach; ?>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
