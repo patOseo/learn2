@@ -1,5 +1,6 @@
 <?php 
 
+$ctabar = get_field('add_call-to-action_bar');
 $cta = get_field('select_cta');
 $message = get_field('message');
 $btn_text = get_field('button_text');
@@ -40,7 +41,7 @@ switch ($cta) {
 
 ?>
 
-<?php if($cta): ?>
+<?php if($ctabar): ?>
 <section class="bar-go">
     <div class="align-items-center container-xl d-flex flex-column flex-md-row justify-content-between">
         <h2 class="mb-4 mb-md-0 text-center text-md-start text-uppercase"><?= $message; ?></h2>
