@@ -180,6 +180,8 @@ li {
         cursor: pointer;
         margin-left: 10px;
         font-weight: 700; }
+      .header .navbar .srhbox .autocomplete {
+        display: none !important; }
     .header .navbar .srhcall {
       cursor: pointer;
       font-size: 16px;

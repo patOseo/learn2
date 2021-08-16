@@ -30,6 +30,7 @@
 		<section class="sec bio <?php echo $color; ?>">
 		    <div class="container">
 		        <div class="row">
+		        	<div class="col-md-12"><?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?></div>
 		            <div class="col-md-6">
 		                <div class="bio-img">
 		                    <?php echo wp_get_attachment_image($img, 'full', '', array('class' => 'w-100 h-auto')); ?>
