@@ -173,6 +173,18 @@
             }
         }
     }
+
+    .bg-orange {
+        background: $orange;
+        
+        li a {
+            padding: 10px 20px;
+            letter-spacing: 3px;
+            font-weight: 900;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
     a {
         color: inherit;
         text-decoration: none;

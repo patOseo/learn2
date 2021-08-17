@@ -26,7 +26,8 @@ function custom_menus(){
             'top-header-menu' => __('Top Header Menu'),
             'header-menu' => __('Header Menu'),
             'footer-menu' => __('Footer Menu'),
-            'social-menu' => __('Social Menu')
+            'social-menu' => __('Social Menu'),
+            'subnav-menu' => __('Subnav Menu')
 
             )
     );

@@ -202,6 +202,13 @@ li {
             border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
             .header .navbar.openmob .main-nav .mob-wrap .nav li:first-child {
               border-top: 0 none; }
+  .header .bg-orange {
+    background: #f25000; }
+    .header .bg-orange li a {
+      padding: 10px 20px;
+      letter-spacing: 3px;
+      font-weight: 900;
+      -webkit-font-smoothing: antialiased; }
   .header a {
     color: inherit;
     text-decoration: none; }
