@@ -1185,6 +1185,9 @@ li {
 .wp-block-cover h1, .wp-block-cover h2 {
   text-transform: uppercase; }
 
+.wp-block-image img {
+  height: auto; }
+
 .gform_wrapper label.gfield_label, .gform_wrapper legend.gfield_label {
   font-weight: normal !important; }
 
