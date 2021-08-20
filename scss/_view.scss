@@ -281,7 +281,35 @@
     }
     &.greyblue {
         background-color: #414651 !important;
+
+        &.resource {
+            h2,
+            h3,
+            p {
+                color: $orange;
+            }
+
+            i {
+                margin: 0 auto;
+                text-align: center;
+                width: 100%;
+                color: $orange;
+            }
+
+            hr.is-style-dots {
+                color: $orange;
+                opacity: 1;
+
+                &::before {
+                    content: "·········";
+                    font-size: 3em;
+                    letter-spacing: 1em;
+                }
+            }
+        }
     }
+
+
 }
 
 .yt-place {

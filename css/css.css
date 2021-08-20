@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'URW Geometric';
   src: url("../fonts//URWGeometric-Regular.woff2") format("woff2"), url("../fonts//URWGeometric-Regular.woff") format("woff");
@@ -801,6 +802,22 @@ li {
       color: #f25000; }
   .sec.greyblue {
     background-color: #414651 !important; }
+    .sec.greyblue.resource h2,
+    .sec.greyblue.resource h3,
+    .sec.greyblue.resource p {
+      color: #f25000; }
+    .sec.greyblue.resource i {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      color: #f25000; }
+    .sec.greyblue.resource hr.is-style-dots {
+      color: #f25000;
+      opacity: 1; }
+      .sec.greyblue.resource hr.is-style-dots::before {
+        content: "·········";
+        font-size: 3em;
+        letter-spacing: 1em; }
 
 .yt-place {
   position: relative; }
