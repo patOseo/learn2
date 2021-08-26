@@ -662,6 +662,17 @@ function my_acf_init_block_types() {
             'mode'              => 'edit'
         ));
 
+        acf_register_block_type(array(
+            'name'              => 'video-slider-block',
+            'title'             => __('Video Slider'),
+            'description'       => __('Video Slider Block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/video-slider-block.php',
+            'category'          => 'layout',
+            'icon'              => 'embed-video',
+            'keywords'          => array( 'video', 'slider' ),
+            'mode'              => 'edit'
+        ));
+
 
 
 
