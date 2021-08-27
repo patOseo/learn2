@@ -4,7 +4,8 @@
         // Get sub field values.
         $title = get_sub_field('title');
         $heading = get_sub_field('heading');
-        $background_image = get_sub_field('background_image');      
+        $background_image = get_sub_field('background_image');    
+        
 
         ?>
 
@@ -24,14 +25,15 @@
             if( have_rows('approaches_lists') ):
 
                 while( have_rows('approaches_lists') ) : the_row();
-           
+                $image = get_sub_field('image');  
             ?>
                     
                   
                   <div class="col-md-3 d-flex justify-content-center mt-5">
                       <a href="<?= get_sub_field('button_link'); ?>" class="circle d-flex flex-column <?= get_sub_field('color_code'); ?>">
                           <span class="icon">
-                              <img src="<?= get_sub_field('image'); ?>" alt="" class="w-100"></span>
+                              <?php echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-100 h-auto')); ?>
+                              </span>
                           <span class="go text-uppercase"><?= get_sub_field('button_text'); ?></span>
                       </a>
                   </div>
