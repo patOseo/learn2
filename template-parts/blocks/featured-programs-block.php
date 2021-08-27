@@ -52,7 +52,7 @@ $background_color = get_field('background_color');
                   <div class="col-md-6 col-lg-5 box">
                     <h3 class="text-center text-uppercase"><?= $heading1; ?> </h3>
                     <a href="<?= $link; ?>" class="d-block img-feature">
-                        <img src="<?= $background_image; ?> " alt="" class="w-100">
+                        <?php echo wp_get_attachment_image($background_image, 'full', false, array('class' => 'w-100 h-auto')); ?>
                         <h2 class="mb-0 text-center text-uppercase" <?php if($color): ?>style="color:<?php echo $color; endif; ?>"><?= $title; ?> </h2>
                     </a>
                 </div>
