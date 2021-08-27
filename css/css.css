@@ -668,6 +668,7 @@ li {
     overflow: hidden;
     position: relative; }
     .sec .featured .box .img-feature img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
       position: absolute;
