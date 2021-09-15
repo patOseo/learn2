@@ -45,7 +45,7 @@ $paragraph_5 = get_field('paragraph_5');
 
 ?>
 
-<section class="jumbo bluebg">
+<section class="jumbo sec bluebg">
     <h1 class="text-uppercase text-center"> <?php echo $heading; ?></h1>
     <h2 class="text-uppercase text-center"> <?php echo $sub_heading; ?></h2>
 
