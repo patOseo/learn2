@@ -19,7 +19,11 @@ echo get_header();
      ?>
 
 
-</div> 
+</div>
+
+<div class="modal-link call-to-action">
+	<a href="/test/" class="modal-popup btn btn-primary" data-page="test">Click Me 3</a>
+</div>
 
 <?php
 

@@ -29,6 +29,7 @@
 		text-transform: uppercase;
 		letter-spacing: 3px !important;
 		background: $orange;
+		color: #fff;
         &:hover {
             background: $blue;
         }
@@ -44,5 +45,18 @@
 .wp-block-image {
 	img {
 		height: auto;
+	}
+}
+
+.anchorlinks {
+	a {
+		text-transform: uppercase;
+		color: rgba($black, 0.6);
+		text-decoration: none;
+		transition: .2s;
+
+		&:hover {
+			color: $orange;
+		}
 	}
 }

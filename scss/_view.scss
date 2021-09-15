@@ -227,6 +227,15 @@
             }
         }
     }
+    &.bluebg {
+        background: #399BD7;
+        h1,
+        h2,
+        h3,
+        p {
+            color: $white;
+        }
+    }
     &.blackgrad {
         background: radial-gradient(circle at center,#757575 0%,#0a0000 100%);
     }
@@ -237,6 +246,17 @@
         h3,
         p {
             color: $white;
+        }
+
+        a {
+            -webkit-font-smoothing: antialiased;
+            color: darken($white, 10%);
+            text-decoration: none;
+            transition: 0.2s;
+
+            &:hover {
+                color: lighten($orange, 10%);
+            }
         }
     }
     &.orangegrad {
