@@ -228,6 +228,15 @@
             }
         }
     }
+    &.bluebg {
+        background: #399BD7;
+        h1,
+        h2,
+        h3,
+        p {
+            color: $white;
+        }
+    }
     &.blackgrad {
         background: radial-gradient(circle at center,#757575 0%,#0a0000 100%);
     }

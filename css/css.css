@@ -761,6 +761,13 @@ li {
   .sec.blog h3 a {
     color: #2b2b2b;
     text-decoration: none; }
+  .sec.bluebg {
+    background: #399BD7; }
+    .sec.bluebg h1,
+    .sec.bluebg h2,
+    .sec.bluebg h3,
+    .sec.bluebg p {
+      color: #fff; }
   .sec.blackgrad {
     background: radial-gradient(circle at center, #757575 0%, #0a0000 100%); }
   .sec.bluegrad {
