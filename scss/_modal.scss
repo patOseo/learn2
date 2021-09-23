@@ -9,23 +9,26 @@ perspective effects (not including the modals and the overlay).
 	z-index: 9 !important;
 }*/
 
-// Solve a Problem Page
-.page-id-3990 {
-	.wp-block-button {
-		a {
+// Modal Button
+.wp-block-button {
+	a.modal-popup {
+		font-size: 18px;
+
+		&.grey {
 			background-color: #363636;
 
 			&:hover {
 				background-color: $blue;
 			}
 		}
-	}
-}
 
-// Modal Button
-.wp-block-button {
-	a.modal-popup {
-		font-size: 18px;
+		&.orange {
+			background-color: $orange;
+
+			&:hover {
+				background-color: $blue;
+			}
+		}
 	}
 }
 

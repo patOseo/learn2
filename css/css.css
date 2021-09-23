@@ -1844,13 +1844,16 @@ perspective effects (not including the modals and the overlay).
 /*.navbar{
 	z-index: 9 !important;
 }*/
-.page-id-3990 .wp-block-button a {
-  background-color: #363636; }
-  .page-id-3990 .wp-block-button a:hover {
-    background-color: #0c71c3; }
-
 .wp-block-button a.modal-popup {
   font-size: 18px; }
+  .wp-block-button a.modal-popup.grey {
+    background-color: #363636; }
+    .wp-block-button a.modal-popup.grey:hover {
+      background-color: #0c71c3; }
+  .wp-block-button a.modal-popup.orange {
+    background-color: #f25000; }
+    .wp-block-button a.modal-popup.orange:hover {
+      background-color: #0c71c3; }
 
 .md-content .callsec .box, .md-content .blogsec .box {
   border: 1px solid #b1b0b0; }

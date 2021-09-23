@@ -2,6 +2,7 @@
 $cta = get_field('call-to-action');
 
 $alignment = get_field('alignment');
+$color = get_field('button_color');
 
 ?>
 
@@ -14,7 +15,7 @@ $alignment = get_field('alignment');
 			$str_link = str_replace($base_url, '', $link);
 		?>
 		<div class="wp-block-button">
-			<a class="wp-block-button__link modal-popup" <?php if($link): ?>data-page="<?php echo str_replace('/', '', $str_link); ?>" href="<?php echo $link; ?>"<?php endif; ?>><?php the_sub_field('button_text'); ?></a>
+			<a class="wp-block-button__link modal-popup <?php echo $color; ?>" <?php if($link): ?>data-page="<?php echo str_replace('/', '', $str_link); ?>" href="<?php echo $link; ?>"<?php endif; ?>><?php the_sub_field('button_text'); ?></a>
 		</div>
 	<?php endwhile; ?>
 	</div>
