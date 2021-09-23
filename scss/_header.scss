@@ -15,10 +15,41 @@
     }
 }
 
+.sub-nav {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+
+    &.bg-orange {
+        background: $orange;
+        
+        li a {
+            position: relative;
+            top: 2px;
+            margin: 0;
+            padding: 9px 2rem;
+            letter-spacing: 3px;
+            font-weight: 900;
+            -webkit-font-smoothing: antialiased;
+            transition: .2s;
+
+            &:hover {
+                background: darken($orange, 5%);
+            }
+        }
+    }
+}
+
+.admin-bar {
+    .sub-nav {
+        top: 32px;
+    }
+}
+
 .header {
     background: $white;
     left: 0;
-    position: sticky;
+    // position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -174,16 +205,6 @@
         }
     }
 
-    .bg-orange {
-        background: $orange;
-        
-        li a {
-            padding: 10px 20px;
-            letter-spacing: 3px;
-            font-weight: 900;
-            -webkit-font-smoothing: antialiased;
-        }
-    }
 
     a {
         color: inherit;

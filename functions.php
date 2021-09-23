@@ -119,10 +119,23 @@ function wpdocs_theme_name_scripts() {
     wp_enqueue_script('owl-carousel-min-js',  'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), '');
    
     wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+
+    wp_enqueue_script( 'ajax-script', get_stylesheet_directory_uri() . '/js/ajax-script.js', array(), '', true );
+    wp_localize_script( 'ajax-script', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
    
 
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+
+add_action("wp_ajax_get_page_data", "get_page_data");
+add_action("wp_ajax_nopriv_get_page_data", "get_page_data");
+
+function get_page_data() {  
+    $page = get_page_by_path( $_POST['page_slug'], OBJECT, ['page', 'post']);
+    echo $page->post_content;
+   die();
+
+}
  
 
 
@@ -674,15 +687,31 @@ function my_acf_init_block_types() {
         ));
 
 
+        acf_register_block_type(array(
+            'name'              => 'modal-link-block',
+            'title'             => __('Modal Link'),
+            'description'       => __('Modal Link Block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/modal-link-block.php',
+            'category'          => 'layout',
+            'icon'              => 'cover-image',
+            'keywords'          => array( 'modal', 'link' ),
+            'mode'              => 'edit'
+        ));
 
+        acf_register_block_type(array(
+            'name'              => 'blog-feed-block',
+            'title'             => __('Blog Feed'),
+            'description'       => __('Blog Feed Block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/blog-feed-block.php',
+            'category'          => 'layout',
+            'icon'              => 'grid-view',
+            'keywords'          => array( 'blog', 'feed' ),
+            'mode'              => 'edit'
+        ));
 
     }
 }
 add_action('acf/init', 'my_acf_init_block_types');
-
-
-
-
 
 
 // Testimonial Custom Post Type
