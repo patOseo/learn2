@@ -31,7 +31,7 @@
   font-display: swap; }
 h1, .h1 {
   font: 700 40px "URW Geometric", sans-serif; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     h1, .h1 {
       font-size: 50px; } }
   @media (min-width: 992px) {
@@ -40,7 +40,7 @@ h1, .h1 {
 
 h2, .h2 {
   font: 700 26px "URW Geometric", sans-serif; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     h2, .h2 {
       font-size: 30px; } }
   @media (min-width: 992px) {
@@ -54,7 +54,7 @@ p {
   color: rgba(0, 0, 0, 0.6);
   font: 16px/1.7 "URW Geometric", sans-serif;
   margin: 15px 0 0 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     p {
       margin-top: 20px;
       font-size: 18px; } }
@@ -65,7 +65,7 @@ p {
 li {
   color: rgba(0, 0, 0, 0.6);
   font: 16px/1.7 "URW Geometric", sans-serif; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     li {
       font-size: 18px; } }
 
@@ -123,24 +123,24 @@ li {
         opacity: 0;
         visibility: hidden;
         pointer-events: none; }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       .header .navbar .nav {
         display: none; } }
     .header .navbar .nav li {
       color: #2b2b2b;
       font: 16px/1 "URW Geometric", sans-serif; }
-      @media (max-width: 767px) {
+      @media (max-width: 1199px) {
         .header .navbar .nav li {
           padding: 15px 0;
           text-align: center; } }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .header .navbar .nav li {
           color: #000;
           font-size: 14px;
           letter-spacing: 3px; } }
       .header .navbar .nav li a {
         transition: opacty 0.4s ease; }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
           .header .navbar .nav li a {
             display: block;
             padding: 10px; } }
@@ -149,7 +149,7 @@ li {
             padding: 10px 20px; } }
         .header .navbar .nav li a:hover {
           opacity: 0.7; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .header .navbar .nav li.active a {
           position: relative; }
           .header .navbar .nav li.active a:after {
@@ -241,7 +241,7 @@ li {
 
 .jumbo {
   padding: 30px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .jumbo {
       padding: 40px 0; } }
   @media (min-width: 1200px) {
@@ -252,7 +252,7 @@ li {
     font-size: 26px;
     letter-spacing: 4px;
     margin-bottom: 20px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .jumbo h1 {
         font-size: 30px;
         letter-spacing: 6px;
@@ -267,7 +267,7 @@ li {
     font-size: 20px;
     letter-spacing: 4px;
     margin-bottom: 20px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .jumbo h2 {
         font-size: 24px;
         letter-spacing: 6px;
@@ -279,7 +279,7 @@ li {
         margin-bottom: 40px; } }
   .jumbo p {
     color: #fff; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .jumbo p {
         line-height: 1.8; }
         .jumbo p.ls2 {
@@ -293,18 +293,18 @@ li {
     border-radius: 10px;
     margin-bottom: 30px;
     margin-top: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .jumbo .yt-place {
         margin-bottom: 0;
         margin-top: 0; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .jumbo .jumbo-content {
       margin-bottom: 80px;
       margin-top: 50px; } }
   .jumbo .promoted-link {
     margin-bottom: 30px;
     margin-top: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .jumbo .promoted-link {
         margin-bottom: 60px;
         margin-top: 0; } }
@@ -336,7 +336,7 @@ li {
   letter-spacing: 1px;
   text-decoration: none;
   transition: all 0.2s; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .cta {
       font-size: 15px;
       letter-spacing: 4px;
@@ -382,7 +382,7 @@ li {
       background: #fff; }
   .cta.bigger {
     font-size: 14px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .cta.bigger {
         font-size: 20px; } }
   .cta:hover {
@@ -394,7 +394,7 @@ li {
   background-size: cover;
   min-height: calc(100vh - 120px);
   position: relative; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .hero {
       background-attachment: fixed; } }
   .hero h1 {
@@ -403,7 +403,7 @@ li {
     background-color: #7b1629; }
     .hero.team-hero .circle-center {
       padding: 80px 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .hero.team-hero .circle-center {
           padding: 150px 0; } }
       .hero.team-hero .circle-center .center {
@@ -421,7 +421,7 @@ li {
   .hero.blog-hero {
     min-height: 100px;
     padding-top: 80px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .hero.blog-hero {
         padding-top: 150px;
         min-height: 600px; } }
@@ -429,12 +429,12 @@ li {
       font-size: 60px;
       font-weight: 800;
       margin: 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .hero.blog-hero .h1 {
           font-size: 200px; } }
   .hero.unique-hero {
     padding: 60px 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .hero.unique-hero {
         padding: 120px 0; } }
     .hero.unique-hero h1 {
@@ -443,7 +443,7 @@ li {
       letter-spacing: 1px;
       text-shadow: none;
       margin-bottom: 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .hero.unique-hero h1 {
           font-size: 60px; } }
     .hero.unique-hero p {
@@ -461,7 +461,7 @@ li {
       width: 100%; }
   .hero.publicity-hero {
     padding: 60px 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .hero.publicity-hero {
         padding: 120px 0; } }
     .hero.publicity-hero h1 {
@@ -470,7 +470,7 @@ li {
       letter-spacing: 1px;
       text-shadow: none;
       margin-bottom: 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .hero.publicity-hero h1 {
           font-size: 60px; } }
     .hero.publicity-hero h2 {
@@ -480,7 +480,7 @@ li {
       text-shadow: none;
       margin-bottom: 0;
       margin-top: 40px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .hero.publicity-hero h2 {
           font-size: 26px; } }
     .hero.publicity-hero p {
@@ -490,13 +490,13 @@ li {
       max-width: 800px; }
     .hero.publicity-hero.bottom h2 {
       font-size: 36px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .hero.publicity-hero.bottom h2 {
           font-size: 50px; } }
   .hero.landing-hero {
     min-height: 10px;
     padding: 50px 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .hero.landing-hero {
         padding: 100px 0; } }
   .hero.fadegrey [class*="container"] {
@@ -577,7 +577,7 @@ li {
   min-height: calc(100vh - 80px);
   position: relative;
   text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4); }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .parallax {
       background-attachment: fixed; } }
   .parallax:before {
@@ -591,20 +591,20 @@ li {
   .parallax h1 {
     color: #fff;
     margin-bottom: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .parallax h1 {
         margin-bottom: 40px; } }
   .parallax h2 {
     color: #fff;
     margin-bottom: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .parallax h2 {
         font-size: 28px;
         letter-spacing: 8px; } }
     .parallax h2.bigger {
       font-weight: 900;
       font-size: 36px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .parallax h2.bigger {
           font-size: 60px; } }
   .parallax [class*="container"] {
@@ -612,7 +612,7 @@ li {
 
 .sec {
   padding: 30px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .sec {
       padding: 40px 0; } }
   @media (min-width: 1200px) {
@@ -625,7 +625,7 @@ li {
     color: #2b2b2b;
     letter-spacing: 2px;
     margin-bottom: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec h2, .sec .h2 {
         letter-spacing: 4px;
         margin-bottom: 40px; } }
@@ -636,14 +636,14 @@ li {
   .sec p + h2 {
     margin-bottom: 20px;
     margin-top: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec p + h2 {
         margin-bottom: 30px;
         margin-top: 50px; } }
   .sec p + h3 {
     margin-top: 30px;
     margin-bottom: 10px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec p + h3 {
         margin-top: 40px;
         margin-bottom: 20px; } }
@@ -652,24 +652,24 @@ li {
     .sec .box .yt-place,
     .sec .box .img-place {
       margin-bottom: 20px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .sec .box .yt-place,
         .sec .box .img-place {
           margin-bottom: 25px; } }
     .sec .box h3 {
       color: #f25000;
       letter-spacing: 2px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .sec .box h3 {
           letter-spacing: 8px; } }
     .sec .box h4 {
       color: #000;
       font: 12px "URW Geometric", sans-serif;
       letter-spacing: 2px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .sec .box h4 {
           letter-spacing: 8px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       .sec .box {
         margin-bottom: 30px; }
         .sec .box:last-child {
@@ -710,7 +710,7 @@ li {
     padding: 20px 0; }
     .sec .head h2 {
       margin: 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .sec .head h2 {
           font-size: 30px;
           letter-spacing: 2px; } }
@@ -720,11 +720,11 @@ li {
     padding-bottom: 30px; }
     .sec.contact-meta h2 {
       margin: 20px 0 10px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .sec.contact-meta h2 {
           font-size: 30px;
           letter-spacing: 2px; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec.contact-meta h3 {
         font-size: 20px;
         margin-bottom: 40px; } }
@@ -733,18 +733,18 @@ li {
       text-decoration: none; }
   .sec.intro h3 {
     color: #2b2b2b; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec.intro h3 {
         font-size: 30px;
         letter-spacing: 2px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .sec.intro p {
       font-size: 20px; } }
   @media (min-width: 992px) {
     .sec.intro p {
       font-size: 24px;
       margin: 20px 0 0 0; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .sec.intro li {
       font: 24px/1.7 "URW Geometric", sans-serif; } }
   @media (min-width: 992px) {
@@ -755,7 +755,7 @@ li {
       font-size: 20px; } }
   .sec.content h2 {
     margin-top: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec.content h2 {
         margin-top: 60px;
         margin-bottom: 40px; } }
@@ -765,12 +765,12 @@ li {
     letter-spacing: 2px;
     margin-bottom: 20px;
     margin-top: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .sec.content h3 {
         font-size: 24px;
         letter-spacing: 8px;
         margin-top: 40px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .sec.content p {
       font-size: 20px; } }
   .sec.blog h3 a {
@@ -864,7 +864,7 @@ li {
 
 .cta-list {
   margin-top: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .cta-list {
       margin-top: 50px; }
       .cta-list .cta {
@@ -878,12 +878,12 @@ li {
 .callsec hr, .blogsec hr {
   margin-bottom: 20px;
   margin-top: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .callsec hr, .blogsec hr {
       margin-bottom: 40px; } }
 .callsec h2, .blogsec h2 {
   margin-bottom: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .callsec h2, .blogsec h2 {
       font-size: 26px;
       letter-spacing: 2px; } }
@@ -895,20 +895,20 @@ li {
   .callsec .box .copy, .blogsec .box .copy {
     border-top: 1px solid #d8d8d8;
     padding: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .callsec .box .copy, .blogsec .box .copy {
         padding: 20px; } }
     .callsec .box .copy h2, .blogsec .box .copy h2 {
       font-size: 20px;
       margin-bottom: 15px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .callsec .box .copy h2, .blogsec .box .copy h2 {
           margin-bottom: 20px; } }
     .callsec .box .copy p, .blogsec .box .copy p {
       line-height: 1.5; }
 .callsec [class*="col-"], .blogsec [class*="col-"] {
   margin-top: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .callsec [class*="col-"], .blogsec [class*="col-"] {
       margin-top: 45px; } }
 
@@ -929,14 +929,14 @@ li {
   background: linear-gradient(to right, #F18521, #E41E2D);
   position: relative;
   padding: 30px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .bar-go {
       padding: 45px 0; } }
   .bar-go h2 {
     color: #fff; }
   .bar-go .cta {
     color: #f25000; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .bar-go:before, .bar-go:after {
       background: linear-gradient(to right, #1e83ec 0%, #f6653c 100%);
       content: '';
@@ -1063,13 +1063,13 @@ li {
   margin-bottom: 30px; }
   .blog-content .heading h1 {
     margin-bottom: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .blog-content .heading h1 {
         font-size: 36px;
         letter-spacing: 2px; } }
   .blog-content .heading h2 {
     margin-bottom: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .blog-content .heading h2 {
         font-size: 30px;
         letter-spacing: 2px; } }
@@ -1078,7 +1078,7 @@ li {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .blog-content .heading h3 {
         font-size: 18px; } }
   .blog-content .heading a {
@@ -1154,7 +1154,7 @@ li {
     margin-top: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .wp-block-columns .wp-block-column {
       padding-left: 1rem;
       padding-right: 1rem; } }
@@ -1175,7 +1175,7 @@ li {
     letter-spacing: 3px !important;
     background: #f25000;
     color: #fff; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .wp-block-button a {
         font-size: 15px;
         letter-spacing: 4px;
@@ -1221,7 +1221,7 @@ li {
         background: #fff; }
     .wp-block-button a.bigger {
       font-size: 14px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .wp-block-button a.bigger {
           font-size: 20px; } }
     .wp-block-button a:hover {
@@ -1279,26 +1279,26 @@ li {
   background-position: bottom center;
   background-size: cover;
   padding: 30px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .promotional-hero, .program-meta {
       padding: 60px 0; } }
   .promotional-hero h1, .program-meta h1 {
     font: 700 36px "Righteous", cursive;
     letter-spacing: 8px;
     margin-bottom: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .promotional-hero h1, .program-meta h1 {
         font-size: 60px;
         margin-bottom: 50px; } }
   .promotional-hero h2, .program-meta h2 {
     color: #2b2b2b; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .promotional-hero h2, .program-meta h2 {
         letter-spacing: 8px;
         margin-bottom: 100px; } }
   .promotional-hero p, .program-meta p {
     color: #2b2b2b; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .promotional-hero p, .program-meta p {
         font: 24px/1.7 "URW Geometric", sans-serif;
         margin: 20px 0 0 0; } }
@@ -1306,21 +1306,21 @@ li {
       margin-top: 0; }
   .promotional-hero .cta, .program-meta .cta {
     margin: 30px 0 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .promotional-hero .cta, .program-meta .cta {
         margin-top: 120px; } }
 
 .client-list-pic {
   margin-bottom: 20px;
   margin-top: 80px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .client-list-pic {
       margin-bottom: 40px;
       margin-top: 150px; } }
 
 .high-cta {
   margin: 40px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .high-cta {
       margin: 100px 0; } }
 
@@ -1329,11 +1329,11 @@ li {
   border-radius: 6px;
   margin-top: 30px;
   overflow: hidden; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .program-img {
       margin-top: 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .program-meta .cta {
     margin-top: 60px; } }
 
@@ -1397,7 +1397,7 @@ li {
   background: url(../images/get-bg.jpg);
   background-size: cover;
   padding: 80px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .get-cta {
       padding: 150px; } }
 
@@ -1468,41 +1468,41 @@ li {
   letter-spacing: 2px;
   text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
   margin-bottom: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .book-hero h2 {
       margin-bottom: 40px; } }
 .book-hero h3 {
   letter-spacing: 2px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .book-hero h3 {
       font-size: 24px;
       letter-spacing: 8px; } }
 
 .book-call h2 {
   margin-bottom: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .book-call h2 {
       margin-bottom: 40px; } }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .book-call p {
     font-size: 20px; } }
 .book-call .cta {
   margin-top: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .book-call .cta {
       margin-top: 40px; } }
 
 .get-acc h2, .acc-public h2 {
   letter-spacing: 2px;
   margin-bottom: 20px; }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .get-acc p.bigger, .acc-public p.bigger {
     font-size: 20px; } }
 .get-acc .acc-box, .acc-public .acc-box {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 20px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .get-acc .acc-box, .acc-public .acc-box {
       margin-bottom: 30px; } }
   .get-acc .acc-box .acc-head, .acc-public .acc-box .acc-head {
@@ -1510,7 +1510,7 @@ li {
     cursor: pointer;
     position: relative;
     padding: 15px 35px 15px 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .get-acc .acc-box .acc-head, .acc-public .acc-box .acc-head {
         padding: 20px 40px 20px 20px; } }
     .get-acc .acc-box .acc-head h2, .acc-public .acc-box .acc-head h2 {
@@ -1542,7 +1542,7 @@ li {
   .get-acc .acc-box .acc-content, .acc-public .acc-box .acc-content {
     display: none;
     padding: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .get-acc .acc-box .acc-content, .acc-public .acc-box .acc-content {
         padding: 20px; } }
     .get-acc .acc-box .acc-content p, .acc-public .acc-box .acc-content p {
@@ -1568,7 +1568,7 @@ li {
     .landing-content .container h3,
     .landing-content .container p {
       color: #fff; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .landing-content .container p {
         font-size: 20px; } }
     @media (min-width: 992px) {
@@ -1715,7 +1715,7 @@ li {
       font-size: 36px; }
   .footer .foot-contact {
     padding-bottom: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .footer .foot-contact {
         padding-top: 30px;
         padding-bottom: 60px; } }
@@ -1726,14 +1726,14 @@ li {
       font-size: 24px;
       letter-spacing: 1px;
       margin-bottom: 30px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .footer .foot-contact h2 {
           letter-spacing: 5px; } }
     .footer .foot-contact h3 {
       color: #fff;
       letter-spacing: 1px;
       margin-bottom: 20px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .footer .foot-contact h3 {
           letter-spacing: 5px; } }
     .footer .foot-contact h4 {
@@ -1741,7 +1741,7 @@ li {
       font: 18px "URW Geometric", sans-serif;
       letter-spacing: 1px;
       margin-bottom: 30px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .footer .foot-contact h4 {
           letter-spacing: 2px; } }
     .footer .foot-contact .cta {

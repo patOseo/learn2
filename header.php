@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body <?php body_class(); ?>>
     <header class="header shadow">
-    <div class="d-none d-md-flex justify-content-end top-nav">
+    <div class="d-none d-xl-flex justify-content-end top-nav">
         <?php 
                     $args = array(
                         'menu_class' => 'nav',        
@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   ?>
             <?php endif; ?>      
             <a class="brand" href="/" aria-label="Learn2 logo"><img src="<?php echo $custom_logo_url; ?>" alt="Learn2 Logo" class="w-100"></a>
-            <div class="align-items-center d-flex flex-grow-1 flex-md-grow-0 justify-content-end main-nav"">
+            <div class="align-items-center d-flex flex-grow-1 flex-xl-grow-0 justify-content-end main-nav"">
                 
 
                         <?php 
@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         ?>
 
                 
-                <div class="icon d-md-none" id="navcall" id="navcall">
+                <div class="icon d-xl-none" id="navcall" id="navcall">
                     <div class="ham"><span></span><span></span><span></span></div>
                     <div class="icon-cross">&#x2715;</div>
                 </div>

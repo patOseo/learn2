@@ -1,10 +1,10 @@
-@mixin max-screens($size:767px) {
+@mixin max-screens($size:1199px) {
     @media (max-width: $size) {
         @content;
     }
 }
 
-@mixin min-screens($size:768px) {
+@mixin min-screens($size:1200px) {
     @media (min-width: $size) {
         @content;
     }
