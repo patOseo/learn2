@@ -44,7 +44,7 @@ $staff = new WP_Query($staffargs);
                      <div class="col-md-4">
                        <div class="align-items-center box d-flex flex-column justify-content-center <?= $color; ?>">
                            <a href="<?php the_permalink(); ?>">
-                            <div class="img"><?php echo wp_get_attachment_image($img, 'medium', '', array('class' => 'w-100 h-auto')); ?></div>
+                            <div class="img"><?php echo wp_get_attachment_image($img, 'square', '', array('class' => 'w-100 h-auto')); ?></div>
                            </a>
                            <div class="accordion">
                                <div class="copy-acc">
