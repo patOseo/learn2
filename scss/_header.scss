@@ -91,7 +91,7 @@
                         padding: 10px;
                     }
                     transition: opacty 0.4s ease;
-                    @include min-screens(992px) {
+                    @include min-screens(1280px) {
                         padding: 10px 20px;
                     }
                     &:hover {

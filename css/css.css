@@ -144,7 +144,7 @@ li {
           .header .navbar .nav li a {
             display: block;
             padding: 10px; } }
-        @media (min-width: 992px) {
+        @media (min-width: 1280px) {
           .header .navbar .nav li a {
             padding: 10px 20px; } }
         .header .navbar .nav li a:hover {
