@@ -5,7 +5,7 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support('responsive-embeds');
 add_image_size( 'my-custom-image-size', 640, 999 );
 add_image_size( 'program-view', 363, 204, true);
-add_image_size( 'square', 300, 300, true);
+add_image_size( 'square', 400, 400, true);
 the_post_thumbnail( 'my-custom-image-size' );
 
 

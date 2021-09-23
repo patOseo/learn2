@@ -32,7 +32,7 @@
 		        <div class="row">
 		            <div class="col-md-6">
 		                <div class="bio-img">
-		                    <?php echo wp_get_attachment_image($img, 'full', '', array('class' => 'w-100 h-auto')); ?>
+		                    <?php echo wp_get_attachment_image($img, 'square', '', array('class' => 'w-100 h-auto')); ?>
 		                </div>
 		            </div>
 		            <div class="col-md-6 mt-4 mt-md-0 align-self-center">
