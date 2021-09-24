@@ -925,6 +925,15 @@ li {
   .col-meta .box p.meta-user {
     font-size: 16px; }
 
+.program-breadcrumbs {
+  padding: .5rem;
+  font-size: .85rem;
+  font-family: 'URW Geometric', sans-serif;
+  background: #399BD7;
+  color: #fff; }
+  .program-breadcrumbs a {
+    color: #fff; }
+
 .bar-go {
   background: linear-gradient(to right, #F18521, #E41E2D);
   position: relative;
