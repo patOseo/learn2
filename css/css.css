@@ -2542,6 +2542,9 @@ perspective effects (not including the modals and the overlay).
   line-height: 1;
   z-index: 1000; }
 
+#ajaxsearchliteres1 {
+  z-index: 999999; }
+
 .container {
   max-width: 1200px; }
 
