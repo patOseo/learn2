@@ -10,6 +10,7 @@
     }
     .cta {
         color: $orange;
+        text-align: center;
     }
     @include min-screens {
         &:before,

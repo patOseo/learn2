@@ -944,7 +944,8 @@ li {
   .bar-go h2 {
     color: #fff; }
   .bar-go .cta {
-    color: #f25000; }
+    color: #f25000;
+    text-align: center; }
   @media (min-width: 1200px) {
     .bar-go:before, .bar-go:after {
       background: linear-gradient(to right, #1e83ec 0%, #f6653c 100%);
