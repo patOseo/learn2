@@ -56,3 +56,7 @@ switch ($cta) {
     </div>
 </section>
 <?php endif; ?>
+
+<?php if(is_singular('post')): ?>
+<figure class="wp-block-image size-full is-resized mx-auto d-md-none text-center mt-4"><a href="https://www.save-the-titanic.com/" target="_blank"><img src="https://learn2.com/wp-content/uploads/2021/07/adimg.jpg" alt="Save The Titanic" class="wp-image-3414" width="365" height="365" srcset="https://www.learn2.com/wp-content/uploads/2021/07/adimg.jpg 730w, https://www.learn2.com/wp-content/uploads/2021/07/adimg-300x300.jpg 300w, https://www.learn2.com/wp-content/uploads/2021/07/adimg-150x150.jpg 150w, https://www.learn2.com/wp-content/uploads/2021/07/adimg-640x640.jpg 640w" sizes="(max-width: 365px) 100vw, 365px"></a></figure>
+<?php endif; ?>
