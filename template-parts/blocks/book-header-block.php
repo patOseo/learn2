@@ -30,7 +30,7 @@ $background_image = get_field('background_image');
 
 <section class="sec greyblue bubble book-hero" style="background-image: url(<?= $background_image; ?>);">
     <div class="container-xl text-center text-uppercase">
-        <h2><?= $heading; ?></h2>
+        <h1 class="h2"><?= $heading; ?></h1>
         <h3><?= $sub_heading; ?></h3>
     </div>
 </section>
