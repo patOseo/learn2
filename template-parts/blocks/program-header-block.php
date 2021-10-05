@@ -27,7 +27,7 @@ $description = get_field('description');
 
 
 <section class="sec intro">
-    <h2 class="text-center text-uppercase"><?= $heading; ?></h2>
+    <h1 class="text-center text-uppercase h2"><?= $heading; ?></h1>
     <div class="container">
         <?= $description; ?>
     </div>
