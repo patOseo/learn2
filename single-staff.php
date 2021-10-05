@@ -41,7 +41,7 @@
 		                        <a href="<?= $colorurl; ?>"><img src="/wp-content/uploads/<?= $color; ?>.png" alt="<?= $color; ?>" class="icon"></a>
 		                    </div>
 		                    <div class="meta text-center">
-		                        <h2><?php the_title(); ?></h2>
+		                        <h1 class="h2 mb-0"><?php the_title(); ?></h1>
 		                        <p><?php echo $user_info; ?></p>
 		                        <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		                    </div>
