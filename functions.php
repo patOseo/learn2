@@ -8,6 +8,9 @@ add_image_size( 'program-view', 363, 204, true);
 add_image_size( 'square', 400, 400, true);
 the_post_thumbnail( 'my-custom-image-size' );
 
+remove_action( 'wp_head', 'feed_links_extra', 3 );
+remove_action( 'wp_head', 'feed_links', 2 );
+
 
 add_theme_support(
     'custom-logo',
