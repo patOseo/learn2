@@ -21,7 +21,7 @@
             margin-bottom: 100px;
         }
     }
-    p {
+    p,li {
         color: $grey;
         @include min-screens {
             font: 24px/1.7 $pop;
