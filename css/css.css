@@ -1319,6 +1319,8 @@ li {
     @media (min-width: 1200px) {
       .promotional-hero .cta, .program-meta .cta {
         margin-top: 120px; } }
+  .promotional-hero li, .program-meta li {
+    color: #fff; }
 
 .client-list-pic {
   margin-bottom: 20px;
