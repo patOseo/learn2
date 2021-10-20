@@ -1306,13 +1306,13 @@ li {
       .promotional-hero h2, .program-meta h2 {
         letter-spacing: 8px;
         margin-bottom: 100px; } }
-  .promotional-hero p, .program-meta p {
+  .promotional-hero p, .program-meta p, .promotional-hero li, .program-meta li {
     color: #2b2b2b; }
     @media (min-width: 1200px) {
-      .promotional-hero p, .program-meta p {
+      .promotional-hero p, .program-meta p, .promotional-hero li, .program-meta li {
         font: 24px/1.7 "URW Geometric", sans-serif;
         margin: 20px 0 0 0; } }
-    .promotional-hero p::first-child, .program-meta p::first-child {
+    .promotional-hero p::first-child, .program-meta p::first-child, .promotional-hero li::first-child, .program-meta li::first-child {
       margin-top: 0; }
   .promotional-hero .cta, .program-meta .cta {
     margin: 30px 0 0; }
