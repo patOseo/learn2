@@ -5,7 +5,7 @@
     @include min-screens {
         padding: 60px 0;
     }
-    h1 {
+    h1,.h1 {
         font: 700 36px $right;
         letter-spacing: 8px;
         margin-bottom: 30px;

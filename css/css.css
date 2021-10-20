@@ -1292,12 +1292,12 @@ li {
   @media (min-width: 1200px) {
     .promotional-hero, .program-meta {
       padding: 60px 0; } }
-  .promotional-hero h1, .program-meta h1 {
+  .promotional-hero h1, .program-meta h1, .promotional-hero .h1, .program-meta .h1 {
     font: 700 36px "Righteous", cursive;
     letter-spacing: 8px;
     margin-bottom: 30px; }
     @media (min-width: 1200px) {
-      .promotional-hero h1, .program-meta h1 {
+      .promotional-hero h1, .program-meta h1, .promotional-hero .h1, .program-meta .h1 {
         font-size: 60px;
         margin-bottom: 50px; } }
   .promotional-hero h2, .program-meta h2 {
