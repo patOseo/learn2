@@ -1,6 +1,9 @@
 <?php
+$the_cat = null;
+if(get_field('program_category')) {
+    $the_cat = get_field('program_category');
+}
 
-$the_cat = get_field('program_category');
 $lang = get_field('language');
 
 $args = array(
@@ -11,7 +14,7 @@ $args = array(
     'lang' => $lang
 );
 
-if($the_cat) {
+if($the_cat != null) {
     $args['tax_query'] = (
         array(
             'taxonomy' => 'program',
