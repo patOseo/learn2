@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   ?>
             <?php endif; ?>      
             <a class="brand" href="/" aria-label="Learn2 logo"><img src="<?php echo $custom_logo_url; ?>" alt="Learn2 Logo" class="w-100"></a>
-            <div class="align-items-center d-flex flex-grow-1 flex-xl-grow-0 justify-content-end main-nav"">
+            <div class="align-items-center d-flex flex-grow-1 flex-xl-grow-0 justify-content-end main-nav">
                 
 
                         <?php 
