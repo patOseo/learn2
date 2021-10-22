@@ -1,20 +1,25 @@
 <?php
 
 $the_cat = get_field('program_category');
+$lang = get_field('language');
 
 $args = array(
     'post_type' => 'programs',
     'posts_per_page' => -1,
     'order' => 'ASC',
     'orderby' => 'menu_order',
-    'tax_query' => array(
+    'lang' => $lang
+);
+
+if($the_cat) {
+    $args['tax_query'] = (
         array(
             'taxonomy' => 'program',
             'terms'    => $the_cat,
             'include_children' => false
-        ),
-    )
-);
+        )
+    );
+}
 
 $programs = new WP_Query($args);
 
