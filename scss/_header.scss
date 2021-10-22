@@ -191,6 +191,7 @@
                     position: absolute;
                     top: 100%;
                     width: 100%;
+                    z-index: 99999;
                     .nav {
                         display: block;
                         li {
