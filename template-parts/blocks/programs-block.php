@@ -1,4 +1,5 @@
 <?php
+
 $the_cat = null;
 if(get_field('program_category')) {
     $the_cat = get_field('program_category');
@@ -6,21 +7,28 @@ if(get_field('program_category')) {
 
 $lang = get_field('language');
 
-$args = array(
-    'post_type' => 'programs',
-    'posts_per_page' => -1,
-    'order' => 'ASC',
-    'orderby' => 'menu_order',
-    'lang' => $lang
-);
-
 if($the_cat != null) {
-    $args['tax_query'] = (
-        array(
-            'taxonomy' => 'program',
-            'terms'    => $the_cat,
-            'include_children' => false
+    $args = array(
+        'post_type' => 'programs',
+        'posts_per_page' => -1,
+        'order' => 'ASC',
+        'orderby' => 'menu_order',
+        'lang' => $lang,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'program',
+                'terms'    => $the_cat,
+                'include_children' => false
+            )
         )
+    );
+} else {
+    $args = array(
+        'post_type' => 'programs',
+        'posts_per_page' => -1,
+        'order' => 'ASC',
+        'orderby' => 'menu_order',
+        'lang' => $lang
     );
 }
 
