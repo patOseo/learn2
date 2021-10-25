@@ -735,6 +735,7 @@ function register_custom_post_types() {
         'not_found_in_trash' => 'No Testimonial found in Trash', 
         'parent_item_colon' => '',
         'menu_name' => 'Testimonials',
+        'publicly_queryable'  => false
     );
     
     // register post type
