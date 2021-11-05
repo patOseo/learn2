@@ -1049,6 +1049,26 @@ li {
   .blogsec .copy .author a {
     color: #1e83ec; }
 
+.blog-content .bar-go {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+  padding: 1.5rem 0 !important;
+  background: none !important;
+  text-align: center; }
+  .blog-content .bar-go > div {
+    display: block !important; }
+  .blog-content .bar-go:before, .blog-content .bar-go:after {
+    height: 3px; }
+  .blog-content .bar-go h2 {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    font-size: 1.5rem !important;
+    text-align: center !important; }
+  .blog-content .bar-go .cta {
+    background: #f25000;
+    color: #fff; }
+    .blog-content .bar-go .cta:hover {
+      background: #0c71c3; }
 .blog-content .social {
   margin-bottom: 50px; }
   .blog-content .social li {

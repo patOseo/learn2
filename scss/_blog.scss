@@ -15,6 +15,36 @@
 }
 
 .blog-content {
+    .bar-go {
+        > div {
+            display: block !important;
+        }
+        margin-top: 4rem !important;
+        margin-bottom: 4rem !important;
+        padding: 1.5rem 0 !important;
+        background: none !important;
+        text-align: center;
+
+        &:before,&:after {
+            height: 3px;
+        }
+
+        h2 {
+            margin-top: 0 !important;
+            margin-bottom: 1rem !important;
+            font-size: 1.5rem !important;
+            text-align: center !important;
+        }
+
+        .cta {
+            background: $orange;
+            color: #fff;
+
+            &:hover {
+                background: $blue;
+            }
+        }
+    }
     .social {
         margin-bottom: 50px;
         li {
