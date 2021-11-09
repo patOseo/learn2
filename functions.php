@@ -907,6 +907,45 @@ add_action( 'init', 'register_custom_post_types' );
 
 
 
+// Removing Breadcrumbs schema from home page
+add_filter( 'wpseo_schema_graph_pieces', 'remove_breadcrumbs_from_schema', 11, 2 );
+add_filter( 'wpseo_schema_webpage', 'remove_breadcrumbs_property_from_webpage', 11, 1 );
+
+/**
+ * Removes the breadcrumb graph pieces from the schema collector.
+ *
+ * @param array  $pieces  The current graph pieces.
+ * @param string $context The current context.
+ *
+ * @return array The remaining graph pieces.
+ */
+function remove_breadcrumbs_from_schema( $pieces, $context ) {
+    if(is_front_page()){
+        return \array_filter( $pieces, function( $piece ) {
+            return ! $piece instanceof \Yoast\WP\SEO\Generators\Schema\Breadcrumb;
+        } );
+    }
+    
+}
+
+/**
+ * Removes the breadcrumb property from the WebPage piece.
+ *
+ * @param array $data The WebPage's properties.
+ *
+ * @return array The modified WebPage properties.
+ */
+function remove_breadcrumbs_property_from_webpage( $data ) {
+    if(is_front_page()) {
+        if (array_key_exists('breadcrumb', $data)) {
+            unset($data['breadcrumb']);
+        }
+        return $data;
+    }
+    
+}
+
+
 // Setting page template for Gutenberg blocks
 // function set_page_block_template() {
 //     $post_type_object = get_post_type_object( 'page' );
