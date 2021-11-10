@@ -17,7 +17,7 @@ function wpdocs_theme_name_scripts() {
 
     // wp_enqueue_script('jquery-min-js',  'https://code.jquery.com/jquery-3.6.0.js', array('jquery'), '', true);
     
-    wp_enqueue_script('jquery-min-js-1',  'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
+    wp_enqueue_script('jquery-min-js-1',  get_template_directory_uri() . '/js/jquery.min.js', false, '', true);
    
    
    
