@@ -1,5 +1,38 @@
 <?php
 
+// style and script enqueue -------------->
+
+function wpdocs_theme_name_scripts() { 
+
+    wp_deregister_script( 'jquery' );
+    // wp_enqueue_script( 'jquery', includes_url( '/js/jquery/jquery.min.js' ), false, NULL, true );
+   
+    wp_enqueue_style( 'style-name1', get_template_directory_uri() . '/css/css.css' );
+   
+    wp_enqueue_style('font-awesome',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '');
+    
+    if(is_singular('programs')) {
+        wp_enqueue_style( 'owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' );
+    }
+
+
+
+    // wp_enqueue_script('jquery-min-js',  'https://code.jquery.com/jquery-3.6.0.js', array('jquery'), '', true);
+    
+    wp_enqueue_script('jquery-min-js-1',  'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
+   
+   
+   
+    wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+
+    wp_enqueue_script( 'ajax-script', get_stylesheet_directory_uri() . '/js/ajax-script.js', array(), '', true );
+    wp_localize_script( 'ajax-script', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+   
+
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+
+
 add_theme_support('align-wide');
 add_theme_support( 'post-thumbnails' );
 add_theme_support('responsive-embeds');
@@ -106,33 +139,8 @@ add_action('widgets_init', 'theme_widget');
 
 
 
-// style and script enqueue -------------->
 
-function wpdocs_theme_name_scripts() {
-   
-    wp_enqueue_style( 'style-name1', get_template_directory_uri() . '/css/css.css' );
-   
-    wp_enqueue_style('font-awesome',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '');
-    
-    if(is_singular('programs')) {
-        wp_enqueue_style( 'owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' );
-    }
-
-    wp_enqueue_script('jquery-min-js',  'https://code.jquery.com/jquery-3.6.0.js', array('jquery'), '', true);
-    
-    wp_enqueue_script('jquery-min-js-1',  'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array('jquery'), '', true);
-   
-   
-   
-    wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
-
-    wp_enqueue_script( 'ajax-script', get_stylesheet_directory_uri() . '/js/ajax-script.js', array(), '', true );
-    wp_localize_script( 'ajax-script', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
-   
-
-}
-add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
-
+// Pop up modal data fetcher
 add_action("wp_ajax_get_page_data", "get_page_data");
 add_action("wp_ajax_nopriv_get_page_data", "get_page_data");
 
@@ -143,7 +151,6 @@ function get_page_data() {
 
 }
  
-
 
 // Register block gutenberg
 
