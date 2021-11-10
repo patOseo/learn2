@@ -24,7 +24,7 @@ $b2_btn_link = get_field('box_2_button_link');
                    <p><?php echo $b1_paragraph; ?></p>
                </div>
                <a href="<?= $b1_btn_link; ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer"><span aria-hidden="true" class="icon">
-                <i class="fa fa-book" aria-hidden="true"></i> </span><?php echo $b1_btn_text; ?></a>
+                 </span><?php echo $b1_btn_text; ?></a>
            </div>
        </div>
        <div class="col-md-6 px-0">
@@ -34,7 +34,7 @@ $b2_btn_link = get_field('box_2_button_link');
                    <p><?= $b2_paragraph; ?></p>
                </div>
                <a href="<?= $b2_btn_link; ?>" class="align-items-center cta d-inline-flex gold mt-4 text-uppercase text-white"><span aria-hidden="true" class="icon">
-                    <i class="fa fa-music" aria-hidden="true"></i> </span><?php echo $b2_btn_text; ?></a>
+                     </span><?php echo $b2_btn_text; ?></a>
            </div>
        </div>
    </div>

@@ -79,8 +79,7 @@ $paragraph_5 = get_field('paragraph_5');
                         <h2><?php echo $heading_3; ?></h2>
                         <p><?php echo $paragraph_3; ?></p>
                     </div>
-                    <a href="<?= $button_link_1; ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer"><span aria-hidden="true" class="icon">
-                     <i class="fa fa-book" aria-hidden="true"></i> </span><?php echo $button_1; ?></a>
+                    <a href="<?= $button_link_1; ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer"><?php echo $button_1; ?></a>
                 </div>
             </div>
             <div class="col-md-6 px-0">
@@ -89,8 +88,7 @@ $paragraph_5 = get_field('paragraph_5');
                         <h2><?= $heading_4; ?></h2>
                         <p><?= $paragraph_4; ?></p>
                     </div>
-                    <a href="<?= $button_link_2; ?>" class="align-items-center cta d-inline-flex gold mt-4 text-uppercase text-white"><span aria-hidden="true" class="icon">
-                         <i class="fa fa-music" aria-hidden="true"></i> </span><?php echo $button_2; ?></a>
+                    <a href="<?= $button_link_2; ?>" class="align-items-center cta d-inline-flex gold mt-4 text-uppercase text-white"><?php echo $button_2; ?></a>
                 </div>
             </div>
         </div>

@@ -66,7 +66,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="srhbox" id="srhbox">
                     <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
                 </div>
-               <div class="d-flex srhcall" id="srhcall"><i class="fa fa-search" aria-hidden="true"></i></div>
+               <div class="d-flex srhcall" id="srhcall">
+                    <svg width="14" x="0px" y="0px" viewBox="-43 -56 512 512">
+                    <path fill="#212529" d="M462,386.7L362.3,287c-4.5-4.5-10.6-7-17-7H329c27.6-35.3,44-79.7,44-128c0-114.9-93.1-208-208-208S-43,37.1-43,152
+                        s93.1,208,208,208c48.3,0,92.7-16.4,128-44v16.3c0,6.4,2.5,12.5,7,17l99.7,99.7c9.4,9.4,24.6,9.4,33.9,0l28.3-28.3
+                        C471.3,411.3,471.3,396.1,462,386.7z M165,280c-70.7,0-128-57.2-128-128C37,81.3,94.2,24,165,24c70.7,0,128,57.2,128,128
+                        C293,222.7,235.8,280,165,280z"/>
+                    </svg>
+
+               </div>
                
             </div>
         </nav>
