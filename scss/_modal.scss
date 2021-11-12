@@ -9,6 +9,10 @@ perspective effects (not including the modals and the overlay).
 	z-index: 9 !important;
 }*/
 
+.modal {
+	z-index: 100000;
+}
+
 // Modal Button
 .wp-block-button {
 	a.modal-popup {

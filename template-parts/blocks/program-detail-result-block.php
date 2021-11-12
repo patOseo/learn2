@@ -35,7 +35,7 @@ $button_link = get_field('button_link');
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <?= $description; ?>
-                <?php if($button_link): ?><a href="<?= $button_link;?>" class="bigger cta d-inline-flex justify-content-center orangegrad px-5 py-3 text-uppercase text-white"><?= $button; ?></a><?php endif; ?>
+                <?php if($button_link): ?><button class="bigger cta d-inline-flex justify-content-center orangegrad px-5 py-3 text-uppercase text-white" data-toggle="modal" data-target="#contactModal"><?= $button; ?></button><?php endif; ?>
             </div>
         </div>
     </div>

@@ -43,8 +43,8 @@ $background_color = get_field('background_color');
             </div>
             <?php endif; ?>
             <div class="col-12 mt-4 text-center">
-                <a href="<?= $button_link; ?>" class="align-items-center bigger cta d-inline-flex justify-content-center mt-4 orangegrad px-5 py-3 text-uppercase text-white"><?= $button; ?></a>
+                <button class="align-items-center bigger cta d-inline-flex justify-content-center mt-4 orangegrad px-5 py-3 text-uppercase text-white" data-toggle="modal" data-target="#contactModal"><?= $button; ?></button>
             </div>
         </div>
     </div>
-</section>  
+</section>

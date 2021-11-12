@@ -52,7 +52,7 @@ switch ($cta) {
 <section class="bar-go">
     <div class="align-items-center container-xl d-flex flex-column flex-md-row justify-content-between">
         <h2 class="mb-4 mb-md-0 text-center text-md-start text-uppercase"><?= $message; ?></h2>
-        <a href="<?= $btn_link; ?>" class="align-items-center cta d-inline-flex text-uppercase white"><?= $btn_text; ?></a>
+        <button data-toggle="modal" data-target="#contactModal" class="align-items-center cta d-inline-flex text-uppercase white"><?= $btn_text; ?></button>
     </div>
 </section>
 <?php endif; ?>

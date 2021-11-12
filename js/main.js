@@ -49,6 +49,9 @@ function modalCloseButton(){
     });
 }
 
+// CTA Modal
+// $('#contactModal').modal('show');
+
 function navMobile() {
     $('#navcall').on('click', function() {
         if ($(this).hasClass('clicked')) {

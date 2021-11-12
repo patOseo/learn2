@@ -2086,6 +2086,9 @@ perspective effects (not including the modals and the overlay).
 /*.navbar{
 	z-index: 9 !important;
 }*/
+.modal {
+  z-index: 100000; }
+
 .wp-block-button a.modal-popup {
   font-size: 18px; }
   .wp-block-button a.modal-popup.grey {

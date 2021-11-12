@@ -101,6 +101,25 @@
     </div>
 </footer>
 
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Get Started</h5>
+        <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <?php gravity_form(1, false, false, false, '', false); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <?php wp_footer(); ?>
 
 </body>
