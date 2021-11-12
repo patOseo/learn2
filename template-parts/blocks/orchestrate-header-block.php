@@ -32,6 +32,6 @@ $button_link = get_field('button_link');
     <div class="container text-center">
         <h1 class="text-uppercase"><?= $heading; ?></h1>
         <h2><?= $sub_heading; ?></h2>
-        <button data-toggle="modal" data-target="#contactModal" class="cta d-inline-flex mt-4 mt-md-5 red-white red-white-color shadow white-red-text"><?= $button; ?></button>
+        <a href="<?= $button_link; ?>" class="cta d-inline-flex mt-4 mt-md-5 red-white red-white-color shadow white-red-text"><?= $button; ?></a>
     </div>
 </section>
