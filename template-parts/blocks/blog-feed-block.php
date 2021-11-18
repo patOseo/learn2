@@ -5,6 +5,7 @@ $more_link = get_field('show_view_more_link');
 $columns = get_field('columns_per_row');
 $recent_or_custom = get_field('recent_or_custom_posts');
 $excerpt = get_field('show_post_excerpt');
+$category = get_field('select_category');
 
 if($recent_or_custom == 1) {
 
@@ -24,6 +25,16 @@ if($recent_or_custom == 1) {
 		'order' => 'DESC',
 		'orderby' => 'date',
 	);
+
+	if($category) {
+		$args['tax_query'] = array(
+			array(
+				'taxonomy'	=> 'category',
+				'field' => 'term_id',
+				'terms' => $category,
+			)
+		);
+	}
 }
 
 $blogposts = new WP_Query($args);
