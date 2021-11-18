@@ -52,7 +52,7 @@ $blogposts = new WP_Query($args);
 	    			$defimg = get_field('default_featured_image', 600);
 					?>
 					<div class="col-md-<?php echo $columns; ?>">
-		                <div class="box d-flex flex-column h-100 justify-content-between">
+		                <div class="box position-relative d-flex flex-column h-100 justify-content-between">
 		                    <div class="img">
 	                        	 <?php if($blogimg): echo $blogimg; else: echo wp_get_attachment_image($defimg, 'program-view', '', array('class' => 'w-100 h-auto')); endif; ?>
 	                        </div>
