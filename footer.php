@@ -65,19 +65,6 @@
             
 
             <div class="align-items-center align-self-center col-md-6 d-flex flex-column justify-content-center px-5">
-              
-
-                <?php if (is_active_sidebar( 'footer-logo-section' ) ) { 
-                       dynamic_sidebar( 'footer-logo-section' );
-                    }       
-                ?>
-               
-              <?php if( $_SERVER['REDIRECT_URL'] == '/about-page/' || $_SERVER['REDIRECT_URL'] == '/our-team/') : ?>
-                <?php if (is_active_sidebar( 'footer-logo-section-text' ) ) { 
-                       dynamic_sidebar( 'footer-logo-section-text' );
-                    }       
-                ?>
-              <?php endif; ?>
             
             </div>
             <div class="col-md-6">
@@ -119,9 +106,13 @@
   </div>
 </div>
 
-
 <?php wp_footer(); ?>
-
+<script type="text/javascript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    vgo('setAccount', '649628025');
+    vgo('setTrackByDefault', true);
+    vgo('process');
+</script>
 </body>
 </html>
 
