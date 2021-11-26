@@ -55,10 +55,15 @@
             </ul>
             <div class="row">
                 <div class="col-md-8">
+                    <p class="mt-0 mb-3">
+                        <?php the_category(', '); ?>
+                    </p>
+
                     <div class="heading">
                         <h1 class="text-uppercase"><?= get_the_title(); ?></h1>
                         <h3>By <?= ucfirst(get_the_author()); ?></h3>
                     </div>
+        
                     <div class="blog-content">
                         <?php the_content();  ?>
                     </div>
