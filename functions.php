@@ -950,7 +950,6 @@ function remove_breadcrumbs_property_from_webpage( $data ) {
     
 }
 
-
 // Setting page template for Gutenberg blocks
 // function set_page_block_template() {
 //     $post_type_object = get_post_type_object( 'page' );
@@ -961,3 +960,31 @@ function remove_breadcrumbs_property_from_webpage( $data ) {
 //     $post_type_object->template_lock = 'all';
 // }
 // add_action( 'init', 'set_page_block_template' );
+
+
+
+// AJAX Blog Filter
+
+function filter_blogs() {
+  $catSlug = $_POST['category'];
+
+  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+  $ajaxposts = new WP_Query([
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => 15,
+    'category_name' => $catSlug,
+    'order' => 'desc',
+    'paged'      => $paged
+  ]);
+
+  if ($wpb_all_query -> have_posts()) {
+    while ($wpb_all_query-> have_posts() ) :
+        get_template_part('template-parts/blog-list');
+    endwhile;
+  }
+
+  exit;
+}
+add_action('wp_ajax_filter_blogs', 'filter_blogs');
+add_action('wp_ajax_nopriv_filter_blogs', 'filter_blogs');

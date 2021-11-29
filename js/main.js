@@ -33,6 +33,29 @@ $(window).scroll(function(e){
     }
 });
 
+// AJAX Blog Filter
+
+$('.cat-list-item').on('click', function() {
+    var slug = $(this).data('slug');
+    console.log(slug);
+
+  $('.cat-list-item').removeClass('active');
+  $(this).addClass('active');
+
+  $.ajax({
+    type: 'POST',
+    url: '/wp-admin/admin-ajax.php',
+    dataType: 'html',
+    data: {
+      action: 'filter_blogs',
+      category: $(this).data('slug'),
+    },
+    success: function(res) {
+      $('#postsGrid').html(res);
+    }
+  })
+});
+
 // Modal Popups
 $('.modal-popup').off('click');
 $('.modal-popup').on('click', function (e) {

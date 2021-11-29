@@ -56,7 +56,16 @@
             <div class="row">
                 <div class="col-md-8">
                     <p class="mt-0 mb-3">
-                        <?php the_category(', '); ?>
+                        <?php
+                        $cat_string = get_the_category_list(', ');
+                        $cat_array = explode(', ', $cat_string);
+
+                        // echo $cat_array[0];
+
+                            if(!in_array('Uncategorized', $cat_array)){
+                                the_category(', ');
+                            }
+                        ?>
                     </p>
 
                     <div class="heading">
@@ -84,13 +93,13 @@
                             <span class="nav-label"><?php next_post_link();?></span>
                     </div>
                     <div class="search-post">
-                        <form action="" class="d-flex">
+                        <!-- <form action="" class="d-flex">
                             <input type="text" name="" id="" placeholder="Search..." class="border-0 flex-grow-1 px-3">
                             <button class="bg-transparent border-0 px-3" type="submit">
                                 
                                 <svg width="18" height="18" viewBox="0 0 32.24800109863281 32.24800109863281" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 19,0C 11.82,0, 6,5.82, 6,13c0,3.090, 1.084,5.926, 2.884,8.158l-8.592,8.592c-0.54,0.54-0.54,1.418,0,1.958 c 0.54,0.54, 1.418,0.54, 1.958,0l 8.592-8.592C 13.074,24.916, 15.91,26, 19,26c 7.18,0, 13-5.82, 13-13S 26.18,0, 19,0z M 19,24 C 12.934,24, 8,19.066, 8,13S 12.934,2, 19,2S 30,6.934, 30,13S 25.066,24, 19,24z"></path></g></svg>
                             </button>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
               

@@ -21,10 +21,22 @@ get_header();
 
 <section class="sec blogsec">
     <h1 class="text-center text-uppercase h2"><?= the_title(); ?></h1>
-    <div class="container">
-        <div class="row">
-            
 
+    <div class="container">
+    	<!-- <div class="row">
+    		<div class="col-12 align-self-center text-center">
+            	<div class="cat-list">
+            		<button class="btn btn-md btn-secondary" data-slug="">All</button>
+            		<?php $all_cats = get_categories(); ?>
+    				<?php foreach($all_cats as $cat): ?>
+    					<button class="btn btn-md btn-secondary cat-list-item" data-slug="<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></button>
+    				<?php endforeach; ?>
+    			</div>
+    		</div>
+    	</div> -->
+
+        <div class="row" id="postsGrid">
+            
 	    	<?php if ($wpb_all_query -> have_posts()) : ?>  
 
 	    		<?php 
