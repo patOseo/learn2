@@ -2087,7 +2087,11 @@ perspective effects (not including the modals and the overlay).
 	z-index: 9 !important;
 }*/
 .modal {
-  z-index: 100000; }
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.7); }
+  .modal .modal-dialog {
+    overflow-y: scroll;
+    margin-top: 4rem; }
 
 .wp-block-button a.modal-popup {
   font-size: 18px; }
