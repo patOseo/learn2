@@ -28,7 +28,7 @@ $(window).on('scroll', function() {
 
 $(window).scroll(function(e){
     var $el = $('.top-nav');
-    if($($el).scrollTop() = 0){
+    if($($el).scrollTop() == 0){
         $el.css({'position': 'sticky'});
     }
 });
@@ -53,7 +53,7 @@ $('.cat-list-item').on('click', function() {
     success: function(res) {
       $('#postsGrid').html(res);
     }
-  })
+  });
 });
 
 // Modal Popups
@@ -177,12 +177,12 @@ function sameHeadSize(ele) {
 function faqAcc() {
     $('.acc-box .acc-head').on('click', function() {
         if ($(this).parent().hasClass('clicked')) {
-            $(this).parent().removeClass('clicked')
+            $(this).parent().removeClass('clicked');
             $(this).next().slideUp();
         } else {
             $('.acc-box').removeClass('clicked');
             $('.acc-box .acc-content').slideUp();
-            $(this).parent().addClass('clicked')
+            $(this).parent().addClass('clicked');
             $(this).next().slideDown();
         }
     });
