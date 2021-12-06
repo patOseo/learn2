@@ -48,10 +48,12 @@ $('.cat-list-item').on('click', function() {
     dataType: 'html',
     data: {
       action: 'filter_blogs',
-      category: $(this).data('slug'),
+      category: slug,
     },
     success: function(res) {
-      $('#postsGrid').html(res);
+        $('#postsGrid').fadeOut(250, function () {
+            $('#postsGrid').html(res).fadeIn(250);
+        });
     }
   });
 });

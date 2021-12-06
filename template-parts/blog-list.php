@@ -1,3 +1,8 @@
+<?php 
+$blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
+$defimg = get_field('default_featured_image', 600);
+?>
+
 <div class="col-md-4">
     <div class="box d-flex flex-column h-100 justify-content-between">
         <div class="img">

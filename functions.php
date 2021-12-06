@@ -977,12 +977,15 @@ function filter_blogs() {
     'order' => 'desc',
     'paged'      => $paged
   ]);
+  $total = $ajaxposts->max_num_pages;
 
-  if ($wpb_all_query -> have_posts()) {
-    while ($wpb_all_query-> have_posts() ) :
+  if ($ajaxposts -> have_posts()) {
+    while ($ajaxposts-> have_posts() ) : $ajaxposts->the_post();
         get_template_part('template-parts/blog-list');
     endwhile;
   }
+
+  include_once('template-parts/blog-pagination.php');
 
   exit;
 }
