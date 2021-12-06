@@ -9,7 +9,7 @@ get_header();
 	$wpb_all_query = new wp_query(array(
 		'post_type'  => 'post',
 		'post_status'=> 'publish',
-		'posts_per_page' => 15,
+		'posts_per_page' => 24,
 		'order' => 'DESC',
 		'paged'      => $paged
 	));
@@ -26,10 +26,10 @@ get_header();
     	<div class="row">
     		<div class="col-12 align-self-center text-center">
             	<div class="cat-list">
-            		<button class="btn btn-md btn-primary cat-list-item active mx-2" data-slug="">All</button>
+            		<button class="btn btn-md btn-primary cat-list-item active mb-2 mx-2" data-slug="">All</button>
             		<?php $all_cats = get_categories(); ?>
     				<?php foreach($all_cats as $cat): ?>
-    					<button class="btn btn-md btn-primary cat-list-item mx-2" data-slug="<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></button>
+    					<button class="btn btn-md btn-primary cat-list-item mb-2 mx-2" data-slug="<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></button>
     				<?php endforeach; ?>
     			</div>
     		</div>
