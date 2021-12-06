@@ -972,7 +972,7 @@ function filter_blogs() {
   $ajaxposts = new WP_Query([
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 15,
+    'posts_per_page' => 24,
     'category_name' => $catSlug,
     'order' => 'desc',
     'paged'      => $paged
@@ -985,7 +985,7 @@ function filter_blogs() {
     endwhile;
   }
 
-  include_once('template-parts/blog-pagination.php');
+  // include_once('template-parts/blog-pagination.php');
 
   exit;
 }
