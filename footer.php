@@ -94,13 +94,18 @@
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Get Started</h5>
+        <h5 class="modal-title" id="modalTitle"><?php if(is_single(5625)): ?>Ready to talk to an actual Save the Titanic facilitator to see if this is a good fit for your organization?<?php else: ?>Get Started<?php endif; ?></h5>
         <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <?php gravity_form(1, false, false, false, '', false); ?>
+        <?php if(is_single(5625)): ?>
+            <p>Provide your contact details and we will be in touch soon.</p>
+            <?php gravity_form(22, false, false, false, '', true); ?>
+        <?php else: ?>
+            <?php gravity_form(1, false, false, false, '', false); ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>
