@@ -1,31 +1,31 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'URW Geometric';
-  src: url("../fonts//URWGeometric-Regular.woff2") format("woff2"), url("../fonts//URWGeometric-Regular.woff") format("woff");
+  src: url("../fonts/URWGeometric-Regular.woff2") format("woff2"), url("../fonts/URWGeometric-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'URW Geometric';
-  src: url("../fonts//URWGeometric-SemiBold.woff2") format("woff2"), url("../fonts//URWGeometric-SemiBold.woff") format("woff");
+  src: url("../fonts/URWGeometric-SemiBold.woff2") format("woff2"), url("../fonts/URWGeometric-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'URW Geometric';
-  src: url("../fonts//URWGeometric-Bold.woff2") format("woff2"), url("../fonts//URWGeometric-Bold.woff") format("woff");
+  src: url("../fonts/URWGeometric-Bold.woff2") format("woff2"), url("../fonts/URWGeometric-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'URW Geometric';
-  src: url("../fonts//URWGeometric-ExtraBold.woff2") format("woff2"), url("../fonts//URWGeometric-ExtraBold.woff") format("woff");
+  src: url("../fonts/URWGeometric-ExtraBold.woff2") format("woff2"), url("../fonts/URWGeometric-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'URW Geometric';
-  src: url("../fonts//URWGeometric-Heavy.woff2") format("woff2"), url("../fonts//URWGeometric-Heavy.woff") format("woff");
+  src: url("../fonts/URWGeometric-Heavy.woff2") format("woff2"), url("../fonts/URWGeometric-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
