@@ -102,7 +102,7 @@
       <div class="modal-body">
         <?php if(is_single(5625)): ?>
             <p>Provide your contact details and we will be in touch soon.</p>
-            <?php gravity_form(22, false, false, false, '', true); ?>
+            <?php gravity_form(22, false, false, false, '', false); ?>
         <?php else: ?>
             <?php gravity_form(1, false, false, false, '', false); ?>
         <?php endif; ?>
