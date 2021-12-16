@@ -118,6 +118,9 @@
     vgo('setTrackByDefault', true);
     vgo('process');
 </script>
+<noscript>
+  <img src="https://ws.zoominfo.com/pixel/61ba2d6fe97826001a6e57e8" width="1" height="1" style="display: none;" />
+</noscript>
 </body>
 </html>
 
