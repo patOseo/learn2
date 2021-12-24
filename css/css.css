@@ -1379,7 +1379,7 @@ li {
     cursor: pointer;
     position: relative;
     padding: 10px 40px 10px 15px; }
-    .accordions .acc-box .acc-head h4 {
+    .accordions .acc-box .acc-head h4, .accordions .acc-box .acc-head .h4 {
       color: #fff;
       font: 18px "URW Geometric", sans-serif;
       margin-bottom: 0; }
