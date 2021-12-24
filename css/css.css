@@ -1382,7 +1382,8 @@ li {
     .accordions .acc-box .acc-head h4, .accordions .acc-box .acc-head .h4 {
       color: #fff;
       font: 18px "URW Geometric", sans-serif;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      letter-spacing: initial; }
     .accordions .acc-box .acc-head .arrow {
       position: absolute;
       width: 16px;
