@@ -1427,6 +1427,13 @@ li {
 .accordions [class*="col-"]:nth-child(2) .acc-box {
   background-color: #2b2b2b; }
 
+.sec.bluegrad .programsec {
+  padding-top: 0; }
+  .sec.bluegrad .programsec .box {
+    background: #fff; }
+    .sec.bluegrad .programsec .box .copy p, .sec.bluegrad .programsec .box .copy h2, .sec.bluegrad .programsec .box .copy a {
+      color: #000; }
+
 .get-cta {
   background: url(../images/get-bg.jpg);
   background-size: cover;

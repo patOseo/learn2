@@ -1,13 +1,21 @@
 <?php
 
+$manual = get_field('manual');
+
+$the_progs = null;
 $the_cat = null;
+
 if(get_field('program_category')) {
     $the_cat = get_field('program_category');
 }
 
+if(get_field('select_programs')) {
+    $the_progs = get_field('select_programs', false, false);
+}
+
 $lang = get_field('language');
 
-if($the_cat != null) {
+if($the_cat != null && $manual != 1) {
     $args = array(
         'post_type' => 'programs',
         'posts_per_page' => -1,
@@ -22,6 +30,15 @@ if($the_cat != null) {
             )
         )
     );
+} elseif($the_progs != null && $manual == 1) {
+    $args = array(
+        'post_type' => 'programs',
+        'posts_per_page' => -1,
+        'post__in' => $the_progs,
+        'orderby' => 'post__in',
+        
+    );
+
 } else {
     $args = array(
         'post_type' => 'programs',
@@ -37,7 +54,7 @@ $programs = new WP_Query($args);
 ?>
 
 <?php if($programs->have_posts()): ?>
-<section class="sec callsec">
+<section class="sec callsec programsec">
     <div class="row">
         <?php while($programs->have_posts()): $programs->the_post(); ?>
             <div class="col-md-4">

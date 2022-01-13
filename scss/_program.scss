@@ -105,6 +105,20 @@
     }
 }
 
+.sec.bluegrad {
+    .programsec{
+        padding-top: 0;
+        .box {
+            background: $white;
+            .copy {
+                p,h2, a {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
 .get-cta {
     background: url(../images/get-bg.jpg);
     background-size: cover;
