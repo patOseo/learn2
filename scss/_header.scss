@@ -56,6 +56,14 @@
     .navbar {
         height: 80px;
         padding: 5px 15px;
+        @include max-screens(991px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: $white;
+            width: 100%;
+            z-index: 999999;
+        }
         @include min-screens(992px) {
             padding: 5px 30px;
         }

@@ -114,6 +114,14 @@ li {
   .header .navbar {
     height: 80px;
     padding: 5px 15px; }
+    @media (max-width: 991px) {
+      .header .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        z-index: 999999; } }
     @media (min-width: 992px) {
       .header .navbar {
         padding: 5px 30px; } }
@@ -1174,6 +1182,10 @@ li {
       font: 14px "URW Geometric", sans-serif;
       height: 36px;
       outline: 0 none !important; }
+
+@media (max-width: 991px) {
+  #main-content {
+    padding-top: 80px; } }
 
 .wp-block-columns {
   max-width: 1200px;

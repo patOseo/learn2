@@ -1,3 +1,9 @@
+#main-content {
+	@include max-screens(991px) {
+		padding-top: 80px;
+	}
+}
+
 .wp-block-columns {
 	max-width: 1200px;
 	margin: 0 auto;
