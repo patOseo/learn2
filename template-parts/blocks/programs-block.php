@@ -82,7 +82,7 @@ $programs = new WP_Query($args);
                             <div class="img"><img src="<?php echo the_post_thumbnail_url('program-view'); ?>" alt="<?php the_title(); ?>" class="w-100"></div>
                             <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
                                 <div class="text">
-                                    <h2><a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+                                    <h2><a href="<?php if(get_the_ID() == 3349) { echo "https://www.save-the-titanic.com/"; } else { the_permalink(); } ?>" class="stretched-link"><?php the_title(); ?></a></h2>
                                     <p><?php echo wp_trim_words(the_excerpt(), 30); ?></p>
                                 </div>
                                 <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
