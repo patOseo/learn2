@@ -61,7 +61,7 @@
     </div>
     
     <div class="container-xl foot-contact">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-4 text-center "> 
                 <p class="h4 text-white">
                     <strong class="text-uppercase">Call Direct:</strong><br><a href="tel:416-410-6434">416-410-6434</a>
@@ -82,7 +82,18 @@
                 <a href="/leadership-development/" class="d-block text-uppercase cta text-center">Leadership Development</a>
                 <a href="/communication-skills-training/" class="d-block text-uppercase cta text-center">Communication Skills Training</a>
             </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <?php if (is_active_sidebar( 'footer-contact-text' ) ) { 
+                       dynamic_sidebar( 'footer-contact-text' );
+                    }       
+                ?>
+            </div>
         </div>
+        
     </div>
     <?php endif; ?>
     
