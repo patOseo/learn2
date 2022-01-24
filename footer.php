@@ -11,7 +11,7 @@
             // wp_nav_menu( $args ); 
         ?>
 
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-3 text-center">
                 <a href="https://www.facebook.com/Learn2Solutions/" target="_blank" rel="noopener,noreferrer">
                     <svg width="20" x="0px" y="0px" viewBox="-139 -56 320 512">
@@ -62,16 +62,25 @@
     
     <div class="container-xl foot-contact">
         <div class="row">
-            
-
-            <div class="align-items-center align-self-center col-md-6 d-flex flex-column justify-content-center px-5">
-            
+            <div class="col-md-4 text-center "> 
+                <p class="h4 text-white">
+                    <strong class="text-uppercase">Call Direct:</strong><br><a href="tel:416-410-6434">416-410-6434</a>
+                    <br><br>
+                    <strong class="text-uppercase">Call Toll Free:</strong><br><a href="tel:1-877-453-2762">1-877-453-2762</a>
+                </p>
+                <br> 
+                
             </div>
-            <div class="col-md-6">
-                <?php if (is_active_sidebar( 'footer-copy-right-text' ) ) { 
-                       dynamic_sidebar( 'footer-contact-text' );
-                    }       
-                ?>
+            <div class="col-md-4 text-center">
+                <p class="h4 text-white">
+                    <strong class="text-uppercase">Email:</strong><br><a href="mailto:carrie@learn2.com">carrie@learn2.com</a><br>
+                    <a href="/contact/" class="my-5 cta d-inline-flex text-uppercase">Contact</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="/program/" class="d-block text-uppercase cta text-center">Team Building</a>
+                <a href="/leadership-development/" class="d-block text-uppercase cta text-center">Leadership Development</a>
+                <a href="/communication-skills-training/" class="d-block text-uppercase cta text-center">Communication Skills Training</a>
             </div>
         </div>
     </div>

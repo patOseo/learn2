@@ -36,7 +36,7 @@ $sidebar = get_field('sidebar');
         <h1 class="text-center text-uppercase h2"><?= $heading; ?></h1>
         <div class="row align-items-center">
             <div class="align-self-center col-md-6">
-                <h3 class="text-uppercase"><?= $side_heading; ?></h3>
+                <h2 class="mb-3 h3 text-uppercase"><?= $side_heading; ?></h2>
                 <p><?= $description; ?></p>
             </div>
             
