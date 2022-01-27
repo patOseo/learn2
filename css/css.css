@@ -1300,6 +1300,12 @@ li {
   overflow: hidden;
   width: 260px; }
 
+.contact-header-block {
+  min-height: 50vh; }
+
+.light-link a {
+  color: #fff; }
+
 .contact-form label {
   color: #2b2b2b;
   font: 700 18px "URW Geometric", sans-serif; }
@@ -1964,23 +1970,22 @@ li {
       border-right: 6px solid white; }
 
 .footer {
-  background-color: #363636;
-  background-position: 50%;
+  background: #2a2a2a;
+  background: linear-gradient(180deg, #202020 0%, #040404 100%), url(../images/foot-bg.jpg);
+  background-position: center center;
   background-size: cover;
-  padding: 30px 0 0; }
-  @media (min-width: 1200px) {
-    .footer {
-      background-image: url(../images/foot-bg.jpg); } }
+  background-blend-mode: soft-light; }
   .footer .social {
     padding-bottom: 30px; }
     .footer .social ul li a {
       color: #fff;
       font-size: 36px; }
   .footer .foot-contact {
+    padding-top: 30px;
     padding-bottom: 30px; }
     @media (min-width: 1200px) {
       .footer .foot-contact {
-        padding-top: 30px;
+        padding-top: 60px;
         padding-bottom: 60px; } }
     .footer .foot-contact .img {
       width: 150px; }

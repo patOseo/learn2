@@ -31,10 +31,7 @@ $background_image_left = get_field('background_image_left');
 
 ?>
 
-<section class="sec contact pt-0">
-        <div class="head red">
-            <h2 class="text-center text-uppercase text-white"><?= $heading; ?></h2>
-        </div>
+<section class="sec contact pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-lg-4 pe-xl-5">

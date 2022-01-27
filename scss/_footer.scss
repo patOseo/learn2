@@ -1,11 +1,9 @@
 .footer {
-    @include min-screens {
-        background-image: url(../images/foot-bg.jpg);
-    }
-    background-color: #363636;
-    background-position: 50%;
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, #202020 0%, #040404 100%), url(../images/foot-bg.jpg);
+    background-position: center center;
     background-size: cover;
-    padding: 30px 0 0;
+    background-blend-mode: soft-light;
     .social {
         padding-bottom: 30px;
         ul {
@@ -18,9 +16,10 @@
         }
     }
     .foot-contact {
+        padding-top: 30px;
         padding-bottom: 30px;
         @include min-screens {
-            padding-top: 30px;
+            padding-top: 60px;
             padding-bottom: 60px;
         }
         .img {
