@@ -31,7 +31,8 @@ $heading = get_field('heading');
 ">
     <div class="container-xl">
         <div class="img-hero">
-            <img src="<?= $logo; ?>" alt="" width="w-100"></div>
+        	<?php echo wp_get_attachment_image($logo, 'full', false, array('class' => 'w-100')); ?>
+        </div>
             
         <h1 class="text-uppercase text-white"><?php echo $heading; ?></h1>
     </div>
