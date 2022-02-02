@@ -17,9 +17,8 @@ $top_section = get_field('option');
     <?php endif; ?>
     
     <?php if($top_section == 'image') : ?>
-   
-      <img class="w-100" src="<?= get_field('image') ?>" width="1024" height="483">   
-   
+   		<?php $img = get_field('image'); ?>
+	   	  	<?php echo wp_get_attachment_image($img, 'full', false, array('class' => 'w-100 h-auto')); ?>
     <?php endif;  ?>   
 
 <?php } ?>
