@@ -1297,6 +1297,9 @@ li {
 .light-link a {
   color: #fff; }
 
+.dark-link a {
+  color: #000; }
+
 .contact-form label {
   color: #2b2b2b;
   font: 700 18px "URW Geometric", sans-serif; }
