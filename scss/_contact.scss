@@ -5,6 +5,18 @@
     width: 260px;
 }
 
+.contact-header-block {
+    min-height: 50vh;
+}
+
+.light-link a {
+    color: $white;
+}
+
+.dark-link a {
+    color: $black;
+}
+
 .contact-form {
     label {
         color: $grey;
