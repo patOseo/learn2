@@ -80,7 +80,8 @@
                     <?php if( !empty(get_field('author_image')) && !empty(get_field('description')) ) :  ?>
                     <div class="align-items-start author-meta d-flex">
                         <div class="author-image">
-                            <img width="60" height="60" src="<?= get_field('author_image'); ?>" alt="" class="w-100">
+                            <?php $auth_img = get_field('author_image'); ?>
+                            <?php echo wp_get_attachment_image($auth_img, array('class' => 'w-100', 'width' => '60', 'height' => '60')); ?>
                         </div>
                         <div class="author-info">
                             <p><?= get_field('description'); ?></p>
