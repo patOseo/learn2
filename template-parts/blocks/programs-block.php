@@ -60,8 +60,8 @@ $programs = new WP_Query($args);
             <div class="promoted-link container-xl">
                 <div class="row justify-content-center">
                     <?php while($programs->have_posts()): $programs->the_post(); ?>
-                    <div class="col-md-6 px-0 mb-2">
-                        <div class="align-items-center box d-flex flex-column h-100 justify-content-between text-center" style="background: <?php if(get_the_ID() != '4037' || get_the_ID() != '3349') { ?>linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), <?php } ?>url('<?php echo the_post_thumbnail_url('program-view'); ?>');background-size:cover;background-repeat:no-repeat;background-position:center center;">
+                    <div class="col-md-6 px-0">
+                        <div class="align-items-center box d-flex flex-column h-100 justify-content-between text-center" style="background: <?php if(get_the_ID() != 4037 && get_the_ID() != 3349) { ?>linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), <?php } ?>url('<?php echo the_post_thumbnail_url('program-view'); ?>');background-size:cover;background-repeat:no-repeat;background-position:center center;">
                             <div class="copy flex-grow-1">
                                 <h2 class="text-uppercase"><?php the_title(); ?></h2>
                                 <p><?php echo wp_trim_words(the_excerpt(), 30); ?></p>
