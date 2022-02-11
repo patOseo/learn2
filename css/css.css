@@ -2113,15 +2113,15 @@ perspective effects (not including the modals and the overlay).
     overflow-y: scroll;
     margin-top: 4rem; }
 
-.wp-block-button a.modal-popup {
+.wp-block-button a.wp-block-button__link {
   font-size: 18px; }
-  .wp-block-button a.modal-popup.grey {
+  .wp-block-button a.wp-block-button__link.grey {
     background-color: #363636; }
-    .wp-block-button a.modal-popup.grey:hover {
+    .wp-block-button a.wp-block-button__link.grey:hover {
       background-color: #0c71c3; }
-  .wp-block-button a.modal-popup.orange {
+  .wp-block-button a.wp-block-button__link.orange {
     background-color: #f25000; }
-    .wp-block-button a.modal-popup.orange:hover {
+    .wp-block-button a.wp-block-button__link.orange:hover {
       background-color: #0c71c3; }
 
 .md-content .callsec .box, .md-content .blogsec .box {
