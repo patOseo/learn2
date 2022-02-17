@@ -1817,6 +1817,8 @@ li {
 .pic {
   border: 1px solid rgba(0, 0, 0, 0.4);
   margin-bottom: 30px; }
+  .pic img {
+    height: auto; }
 
 .landing-content {
   position: relative; }
