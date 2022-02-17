@@ -22,8 +22,6 @@ if( !empty($block['align']) ) {
 $heading = get_field('heading');
 $description = get_field('description');
 $background_color = get_field('background_color');
-$button = get_field('button');
-$button_link = get_field('button_link');
 
 
 ?>
@@ -35,7 +33,6 @@ $button_link = get_field('button_link');
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <?= $description; ?>
-                <?php if($button_link): ?><button class="bigger cta d-inline-flex justify-content-center orangegrad px-5 py-3 text-uppercase text-white" data-toggle="modal" data-target="#contactModal"><?= $button; ?></button><?php endif; ?>
             </div>
         </div>
     </div>
