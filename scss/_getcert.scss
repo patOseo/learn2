@@ -89,6 +89,10 @@
 .pic {
     border: 1px solid rgba($black, 0.4);
     margin-bottom: 30px;
+
+    img {
+        height: auto;
+    }
 }
 
 .acc-public {
