@@ -1,12 +1,10 @@
-    <?php if(!empty(get_field('full_image'))) :  ?>
+
     
     <section class="hero blog-hero align-items-end d-flex " style="background-image:url('/wp-content/uploads/2021/07/blog-bg-39.jpg')">
         <div class="container-xl">
             <p class="text-center text-uppercase text-white h1">Blog</p>
         </div>
     </section>
-   
-   <?php endif;  ?>
  
 
     <section class="sec blog-content">
