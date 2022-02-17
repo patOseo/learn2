@@ -692,7 +692,7 @@ li {
     .sec .featured .box .img-feature h2 {
       bottom: 50%;
       color: #ccaa00;
-      font: 30px "Righteous", cursive;
+      font: 30px "URW Geometric", cursive;
       left: 0;
       letter-spacing: 2px;
       padding: 0 15px;
@@ -1327,7 +1327,7 @@ li {
     .promotional-hero, .program-meta {
       padding: 60px 0; } }
   .promotional-hero h1, .program-meta h1, .promotional-hero .h1, .program-meta .h1 {
-    font: 700 36px "Righteous", cursive;
+    font: 700 36px "URW Geometric", cursive;
     letter-spacing: 8px;
     margin-bottom: 30px; }
     @media (min-width: 1200px) {
