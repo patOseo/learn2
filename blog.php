@@ -54,7 +54,7 @@ get_header();
 	                        </div>
 		                    <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
 		                    	<div class="text">
-		                        	<h2><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+		                        	<h2 class="text-uppercase"><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
 		                        	<h3 class="author"><i>by <?php the_author(); ?></i></h3>
 		                        	<p><?= get_the_excerpt(); ?></p>
 		                       </div>
