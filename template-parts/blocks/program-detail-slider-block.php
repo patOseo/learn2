@@ -28,7 +28,7 @@ $button_link = get_field('button_link');
 
     <section class="sec orangegrad slide">
         <div class="container text-center">
-            <h2 class="text-center text-uppercase"><?= $heading;?></h2>
+            <p class="text-center text-uppercase h2"><?= $heading;?></p>
             <div class="owl-carousel owl-loaded owl-drag">
                 <?php
                     if( have_rows('blocks') ):
@@ -39,7 +39,7 @@ $button_link = get_field('button_link');
 
             ?>
                     <div class="circle">
-                        <h2 class="align-items-center d-flex justify-content-center"><?= $heading; ?></h2>
+                        <p class="align-items-center d-flex justify-content-center h2"><?= $heading; ?></p>
                         <p><?= $description; ?></p>
                     </div>
                 

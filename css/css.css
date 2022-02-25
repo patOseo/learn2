@@ -1694,7 +1694,7 @@ li {
     position: absolute;
     top: 0;
     width: 100%; }
-    .slide .owl-carousel .owl-stage .owl-item .circle h2 {
+    .slide .owl-carousel .owl-stage .owl-item .circle h2, .slide .owl-carousel .owl-stage .owl-item .circle .h2 {
       border-bottom: 3px solid #fff;
       font-size: 36px;
       letter-spacing: normal;
