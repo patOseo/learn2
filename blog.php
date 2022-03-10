@@ -26,7 +26,7 @@ get_header();
 	</div>
 </div>
 
-<section class="sec blogsec">
+<section class="blogsec">
     <div class="container">
     	<div class="row">
     		<div class="col-12 align-self-center text-center">
