@@ -20,8 +20,6 @@ get_header();
 
 
 <section class="sec blogsec">
-    <h1 class="text-center text-uppercase h2"><?= the_title(); ?></h1>
-
     <div class="container">
     	<div class="row">
     		<div class="col-12 align-self-center text-center">
