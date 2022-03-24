@@ -58,7 +58,7 @@ $blogposts = new WP_Query($args);
 	                        </div>
 		                    <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
 		                    	<div class="text">
-		                        	<h2><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+		                        	<h2 class="text-uppercase"><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
 		                        	<?php if($excerpt == 1): ?><p><?= get_the_excerpt(); ?></p><?php endif; ?>
 		                       </div>
 		                       <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
