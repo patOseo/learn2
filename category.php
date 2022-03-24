@@ -2,7 +2,10 @@
 
 echo get_header();
 
-
+global $wp_query;
+$cat = get_queried_object();
+$paged = $paged ? $paged : 1;
+$total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
 
 ?>
 
@@ -39,6 +42,20 @@ echo get_header();
                    endif;
                ?>
             </div>
+
+            <div class="col-12"><p>Page <?= $paged; ?> of <?= $total; ?></p></div>
+            <div class="col-12 d-flex justify-content-between">
+
+                <?php if($paged <= $total && $paged > 1  ) : ?>
+                    <a href="/category/<?php echo $cat->slug; ?>/page/<?= max( 1, get_query_var('paged') - 1 ); ?>/" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">&lt;&lt; Latest Entries</a>
+                <?php endif;  ?>
+                
+                
+
+                  <?php if($paged < $total ) : ?>
+                    <a href="/category/<?php echo $cat->slug; ?>/page/<?= max( 1, get_query_var('paged') ) + 1; ?>/" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">Older Entries &gt;&gt;</a>
+                <?php endif;  ?>
+           </div>
         </div>
     </section>
 
