@@ -50,6 +50,7 @@ if($featured) {
             <div class="row">
 
             <?php if($featured): ?>
+                <?php echo "blogs"; ?>
                 <?php
                   if ($cat_query->have_posts()):
                       while ( $cat_query->have_posts() ) : $cat_query->the_post();
