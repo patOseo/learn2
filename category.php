@@ -4,8 +4,22 @@ echo get_header();
 
 global $wp_query;
 $cat = get_queried_object();
-$paged = $paged ? $paged : 1;
-$total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
+$featured = get_field('featured_blog', $cat);
+if($featured) {
+  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+  $args = array(
+    'cat' => $cat->id,
+    'post__not_in' => $featured,
+    'paged' => $paged
+  );
+  $query = new WP_Query($args);
+  $total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
+} else {
+  $paged = $paged ? $paged : 1;
+  $total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
+}
+
+
 
 ?>
 
@@ -16,10 +30,25 @@ $total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
                 <div class="col-12">
                     <h1 class="h2 text-uppercase text-center"><?php single_cat_title(); ?> Blog</h1>
                 </div>
+            </div>
 
+            <?php if($featured): ?>
+            <div class="row align-items-center shadowbox box mb-4 py-0 position-relative">
+              <div class="col-md-5 mt-0 pl-0">
+                <a href="<?php echo get_permalink($featured); ?>"><?php echo get_the_post_thumbnail($featured, 'program-view', array('class' => 'w-100 h-auto')); ?></a>
+              </div>
+              <div class="col-md-7 mt-0 pr-0">
+                <h2 class="text-uppercase"><a href="<?php echo get_permalink($featured); ?>"><?php echo get_the_title($featured); ?></a></h2>
+                <p class="mb-4"><?= get_the_excerpt($featured); ?></p>
+                <a href="<?php echo get_permalink($featured); ?>" class="align-items-center w-auto cta stretched-link lightblue text-uppercase text-white mt-4">read more</a>
+              </div>
+            </div>
+            <?php endif; ?>
+
+            <div class="row">
             <?php
-                   if (have_posts()):
-                       while ( have_posts() ) : the_post();
+                   if ($query->have_posts()):
+                       while ( $query->have_posts() ) : $query->the_post();
              
                             $blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
                             $defimg = get_field('default_featured_image', 600);
@@ -38,7 +67,7 @@ $total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
                                 </div>
                             </div>
             
-                       <?php endwhile;
+                       <?php endwhile; wp_reset_postdata();
                    endif;
                ?>
             </div>
