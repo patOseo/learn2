@@ -12,7 +12,7 @@ if($featured) {
     'post__not_in' => $featured,
     'paged' => $paged
   );
-  $query = new WP_Query($args);
+  $wp_query = new WP_Query($args);
   $total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
 } else {
   $paged = $paged ? $paged : 1;
@@ -47,8 +47,8 @@ if($featured) {
 
             <div class="row">
             <?php
-                   if ($query->have_posts()):
-                       while ( $query->have_posts() ) : $query->the_post();
+                   if ($wp_query->have_posts()):
+                       while ( $wp_query->have_posts() ) : $wp_query->the_post();
              
                             $blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
                             $defimg = get_field('default_featured_image', 600);
