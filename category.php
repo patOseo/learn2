@@ -11,7 +11,7 @@ if($featured) {
     'post_type' => 'post',
     'status' => 'publish',
     'cat' => $cat->id,
-    'post__not_in' => $featured,
+    'post__not_in' => array($featured),
     'paged' => $paged
   );
   $cat_query = new WP_Query($args);
@@ -53,7 +53,6 @@ if($featured) {
 
                 <?php
                   if ($cat_query->have_posts()):
-                                    echo "blogs";
                       while ( $cat_query->have_posts() ) : $cat_query->the_post();
                  
                            $blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
