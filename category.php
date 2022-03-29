@@ -8,6 +8,8 @@ $featured = get_field('featured_blog', $cat);
 if($featured) {
   $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
   $args = array(
+    'post_type' => 'post',
+    'status' => 'publish',
     'cat' => $cat->id,
     'post__not_in' => $featured,
     'paged' => $paged
