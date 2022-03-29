@@ -14,7 +14,7 @@ if($featured) {
     'post__not_in' => $featured,
     'paged' => $paged
   );
-  $wp_query = new WP_Query($args);
+  $cat_query = new WP_Query($args);
   $total = ( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 9999;
 } else {
   $paged = $paged ? $paged : 1;
@@ -48,30 +48,59 @@ if($featured) {
             <?php endif; ?>
 
             <div class="row">
-            <?php
-                   if ($wp_query->have_posts()):
-                       while ( $wp_query->have_posts() ) : $wp_query->the_post();
-             
-                            $blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
-                            $defimg = get_field('default_featured_image', 600);
-                            ?>
-                            <div class="col-md-4">
-                                <div class="box position-relative d-flex flex-column h-100 justify-content-between">
-                                    <div class="img">
-                                         <?php if($blogimg): echo $blogimg; else: echo wp_get_attachment_image($defimg, 'program-view', '', array('class' => 'w-100 h-auto')); endif; ?>
-                                    </div>
-                                    <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
-                                        <div class="text">
-                                            <h2><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
-                                            <p><?= get_the_excerpt(); ?></p>                                       </div>
-                                       <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
-                                    </div>
-                                </div>
-                            </div>
-            
-                       <?php endwhile; wp_reset_postdata();
-                   endif;
-               ?>
+
+            <?php if($featured): ?>
+                <?php
+                  if ($cat_query->have_posts()):
+                      while ( $cat_query->have_posts() ) : $cat_query->the_post();
+                 
+                           $blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
+                           $defimg = get_field('default_featured_image', 600);
+                           ?>
+                           <div class="col-md-4">
+                               <div class="box position-relative d-flex flex-column h-100 justify-content-between">
+                                   <div class="img">
+                                        <?php if($blogimg): echo $blogimg; else: echo wp_get_attachment_image($defimg, 'program-view', '', array('class' => 'w-100 h-auto')); endif; ?>
+                                   </div>
+                                   <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
+                                       <div class="text">
+                                           <h2><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+                                           <p><?= get_the_excerpt(); ?></p>                                       </div>
+                                      <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
+                                   </div>
+                               </div>
+                           </div>
+                
+                      <?php endwhile; wp_reset_postdata();
+                  endif;
+                ?>
+
+            <?php else: ?>
+                <?php
+                  if ($wp_query->have_posts()):
+                      while ( $wp_query->have_posts() ) : $wp_query->the_post();
+                 
+                           $blogimg = get_the_post_thumbnail('','program-view', array('class' => 'w-100 h-auto'));
+                           $defimg = get_field('default_featured_image', 600);
+                           ?>
+                           <div class="col-md-4">
+                               <div class="box position-relative d-flex flex-column h-100 justify-content-between">
+                                   <div class="img">
+                                        <?php if($blogimg): echo $blogimg; else: echo wp_get_attachment_image($defimg, 'program-view', '', array('class' => 'w-100 h-auto')); endif; ?>
+                                   </div>
+                                   <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
+                                       <div class="text">
+                                           <h2><a href="<?= get_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+                                           <p><?= get_the_excerpt(); ?></p>                                       </div>
+                                      <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
+                                   </div>
+                               </div>
+                           </div>
+                
+                      <?php endwhile; wp_reset_postdata();
+                  endif;
+                ?>
+            <?php endif; ?>
             </div>
 
             <div class="col-12"><p>Page <?= $paged; ?> of <?= $total; ?></p></div>
