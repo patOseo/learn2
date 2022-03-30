@@ -42,7 +42,7 @@ if($featured) {
               <div class="col-md-7 mt-0 pr-0">
                 <h2 class="text-uppercase"><a href="<?php echo get_permalink($featured); ?>"><?php echo get_the_title($featured); ?></a></h2>
                 <p class="mb-4"><?= get_the_excerpt($featured); ?></p>
-                <a href="<?php echo get_permalink($featured); ?>" class="align-items-center w-auto cta stretched-link lightblue text-uppercase text-white mt-4">read more</a>
+                <a href="<?php echo get_permalink($featured); ?>" class="mb-3 d-inline-block align-items-center w-auto cta stretched-link lightblue text-uppercase text-white">read more</a>
               </div>
             </div>
             <?php endif; ?>
