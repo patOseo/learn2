@@ -1005,7 +1005,7 @@ function wpb_filter_query( $query, $error = true ) {
     }
 }
 add_action( 'parse_query', 'wpb_filter_query' );
-add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
+// add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 
 function remove_search_widget() {
     unregister_widget('WP_Widget_Search');
