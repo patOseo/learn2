@@ -52,7 +52,7 @@ $heading = get_field('heading');
                         ?>
                             <div class="acc-box">
                                 <div class="acc-head align-items-center d-flex">
-                                    <h4><?= $question; ?></h4><span class="arrow"></span>
+                                    <h3 class="h4"><?= $question; ?></h3><span class="arrow"></span>
                                 </div>
                                 <div class="acc-content">
                                     <p><?= $answer; ?></p>

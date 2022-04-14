@@ -29,7 +29,7 @@ $background_color = get_field('background_color');
 
 <section class="sec grey program-meta">
     <div class="container text-center">
-        <p class="text-uppercase h1"><?= $heading; ?></p>
+        <h2 class="text-uppercase h1"><?= $heading; ?></h2>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <?= $description; ?>
