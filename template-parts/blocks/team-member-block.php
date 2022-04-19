@@ -21,6 +21,7 @@ $staffargs = array(
   'post_type' => 'staff',
   'posts_per_page' => -1,
   'order' => 'ASC',
+  'orderby' => 'menu_order',
   'post__not_in' => array(4448),
 );
 
