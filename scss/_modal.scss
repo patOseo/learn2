@@ -13,7 +13,7 @@ perspective effects (not including the modals and the overlay).
 	z-index: 100000;
 	background: rgba(0, 0, 0, .7);
 
-	@include max-screens(991px) {
+	@include min-screens(991px) {
 		overflow-y: hidden;
 	}
 

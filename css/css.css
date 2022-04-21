@@ -2111,7 +2111,7 @@ perspective effects (not including the modals and the overlay).
 .modal {
   z-index: 100000;
   background: rgba(0, 0, 0, 0.7); }
-  @media (max-width: 991px) {
+  @media (min-width: 991px) {
     .modal {
       overflow-y: hidden; } }
   .modal .modal-dialog {
