@@ -13,8 +13,14 @@ perspective effects (not including the modals and the overlay).
 	z-index: 100000;
 	background: rgba(0, 0, 0, .7);
 
+	@include max-screens(991px) {
+		overflow-y: hidden;
+	}
+
 	.modal-dialog {
-		overflow-y: scroll;
+		@include max-screens(991px) {
+			overflow-y: scroll;
+		}
     	margin-top: 4rem;
 	}
 }

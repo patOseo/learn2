@@ -2111,9 +2111,14 @@ perspective effects (not including the modals and the overlay).
 .modal {
   z-index: 100000;
   background: rgba(0, 0, 0, 0.7); }
+  @media (max-width: 991px) {
+    .modal {
+      overflow-y: hidden; } }
   .modal .modal-dialog {
-    overflow-y: scroll;
     margin-top: 4rem; }
+    @media (max-width: 991px) {
+      .modal .modal-dialog {
+        overflow-y: scroll; } }
 
 .wp-block-button a.wp-block-button__link {
   font-size: 18px; }
