@@ -749,7 +749,7 @@ li {
     .sec.intro li {
       font: 24px/1.7 "URW Geometric", sans-serif; } }
   @media (min-width: 992px) {
-    .sec.intro .acc-public .acc-box .acc-head h2 {
+    .sec.intro .acc-public .acc-box .acc-head h2, .sec.intro .acc-public .acc-box .acc-head .h2 {
       font-size: 24px; }
     .sec.intro .acc-public .acc-box .acc-content p,
     .sec.intro .acc-public .acc-box .acc-content li {
@@ -1773,7 +1773,7 @@ li {
     @media (min-width: 1200px) {
       .get-acc .acc-box .acc-head, .acc-public .acc-box .acc-head {
         padding: 20px 40px 20px 20px; } }
-    .get-acc .acc-box .acc-head h2, .acc-public .acc-box .acc-head h2 {
+    .get-acc .acc-box .acc-head h2, .acc-public .acc-box .acc-head h2, .get-acc .acc-box .acc-head .h2, .acc-public .acc-box .acc-head .h2 {
       color: #f25000;
       font-size: 20px;
       margin: 0;

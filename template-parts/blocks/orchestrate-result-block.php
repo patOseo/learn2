@@ -47,7 +47,7 @@ $sub_heading = get_field('sub_heading');
                 ?>
                     <div class="acc-box">
                         <div class="acc-head">
-                            <h2 class="text-uppercase"><?= $question;?></h2>
+                            <h3 class="h2 text-uppercase"><?= $question;?></h3>
                             <span class="arrow"></span>
                         </div>
                         <div class="acc-content">
