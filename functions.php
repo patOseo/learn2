@@ -720,6 +720,17 @@ function my_acf_init_block_types() {
             'mode'              => 'edit'
         ));
 
+        acf_register_block_type(array(
+            'name'              => 'transcript-block',
+            'title'             => __('Video Transcript'),
+            'description'       => __('Video Transcript Block'),
+            'render_template'   => 'wp-content/themes/learn2/template-parts/blocks/video-transcript-block.php',
+            'category'          => 'layout',
+            'icon'              => 'text',
+            'keywords'          => array( 'video', 'transcript', 'accordion' ),
+            'mode'              => 'edit'
+        ));
+
     }
 }
 add_action('acf/init', 'my_acf_init_block_types');

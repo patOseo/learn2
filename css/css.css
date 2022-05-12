@@ -2812,6 +2812,9 @@ perspective effects (not including the modals and the overlay).
 #ajaxsearchliteres1 {
   z-index: 999999; }
 
+.transcript-block h2, .transcript-block h3, .transcript-block h4, .transcript-block h5, .transcript-block h6 {
+  color: #fff !important; }
+
 .container {
   max-width: 1200px; }
 
