@@ -36,7 +36,7 @@ $image = get_field('image');
         <div class="high-cta text-center"><a href="<?= $button_link; ?>" class="bigger bodred cta d-inline-flex grey px-5 red-white-text text-uppercase"><?= $button; ?></a></div>
         <?= $sub_description; ?>
         <div class="client-list-pic">
-            <img src="<?= $image; ?>" alt="" class="w-100 h-auto">
+            <?php echo wp_get_attachment_image($image, 'full', '', array('class' => 'w-100 h-auto')); ?>
         </div>
     </div>
 </section>

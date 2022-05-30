@@ -32,7 +32,7 @@ $button_link = get_field('button_link');
         <?= $description; ?>
         <a href="<?= $button_link; ?>" class="align-items-center bigger bod cta d-inline-flex px-5 shadow text-uppercase white"><?= $button; ?></a>
         <div class="client-list-pic">
-            <img src="<?= $front_image; ?>" alt="" class="w-100">
+            <?php echo wp_get_attachment_image($front_image, 'full', '', array('class' => 'w-100 h-auto')); ?>
         </div>
     </div>
 </section>
