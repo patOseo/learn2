@@ -29,6 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body <?php body_class(); ?>>
+    <?php if(!get_field('hide_header')): ?>
     <header class="header shadow">
     <div class="d-none d-xl-flex justify-content-end top-nav">
         <?php 
@@ -96,4 +97,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     wp_nav_menu( $subargs ); 
                     ?>
         </div>
+    <?php endif; ?>
 
