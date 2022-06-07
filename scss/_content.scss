@@ -2,6 +2,10 @@
 	@include max-screens(991px) {
 		padding-top: 80px;
 	}
+
+	&.hide-header {
+		padding-top: 0 !important;
+	}
 }
 
 .wp-block-columns {

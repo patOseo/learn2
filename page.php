@@ -6,7 +6,7 @@ echo get_header();
 
 ?>
 
-<div id="main-content">
+<div id="main-content" <?php if(get_field('hide_header')) { echo 'class="hide-header"'; } ?>>
 
   <?php
          if (have_posts()):
