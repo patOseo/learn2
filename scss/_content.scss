@@ -71,3 +71,9 @@
 	}
 
 }
+
+@include max-screens(991px) {
+	.w-m-100 {
+		width: 100% !important;
+	}
+}

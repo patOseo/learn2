@@ -1281,6 +1281,9 @@ li {
   .anchorlinks a:hover {
     color: #f25000; }
 
+@media (max-width: 991px) {
+  .w-m-100 {
+    width: 100% !important; } }
 .gform_wrapper label.gfield_label, .gform_wrapper legend.gfield_label {
   font-weight: normal !important; }
 
