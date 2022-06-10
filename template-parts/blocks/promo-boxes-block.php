@@ -23,7 +23,7 @@ $b2_btn_link = get_field('box_2_button_link');
                    <h2><?php echo $b1_heading; ?></h2>
                    <p><?php echo $b1_paragraph; ?></p>
                </div>
-               <a href="<?= $b1_btn_link; ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer"><span aria-hidden="true" class="icon">
+               <a href="<?= $b1_btn_link; ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer" aria-label="Learn More About <?php echo $b1_heading; ?>"><span aria-hidden="true" class="icon">
                  </span><?php echo $b1_btn_text; ?></a>
            </div>
        </div>
@@ -33,7 +33,7 @@ $b2_btn_link = get_field('box_2_button_link');
                    <h2><?= $b2_heading; ?></h2>
                    <p><?= $b2_paragraph; ?></p>
                </div>
-               <a href="<?= $b2_btn_link; ?>" class="align-items-center cta d-inline-flex gold mt-4 text-uppercase text-white"><span aria-hidden="true" class="icon">
+               <a href="<?= $b2_btn_link; ?>" class="align-items-center cta d-inline-flex gold mt-4 text-uppercase text-white" aria-label="Learn More About <?php echo $b2_heading; ?>"><span aria-hidden="true" class="icon">
                      </span><?php echo $b2_btn_text; ?></a>
            </div>
        </div>

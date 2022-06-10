@@ -113,7 +113,7 @@
 <?php wp_footer(); ?>
 
 <noscript>
-  <img src="https://ws.zoominfo.com/pixel/61ba2d6fe97826001a6e57e8" width="1" height="1" style="display: none;" />
+  <img src="https://ws.zoominfo.com/pixel/61ba2d6fe97826001a6e57e8" alt="ZoomInfo Pixel" width="1" height="1" style="display: none;" />
 </noscript>
 
 <!-- Start of HubSpot Embed Code -->
