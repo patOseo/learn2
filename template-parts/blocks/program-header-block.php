@@ -27,7 +27,7 @@ $description = get_field('description');
 
 
 <section class="sec intro">
-    <h1 class="text-center text-uppercase h2"><?= $heading; ?></h1>
+    <?php if($heading): ?><h1 class="text-center text-uppercase h2"><?= $heading; ?></h1><?php endif; ?>
     <div class="container">
         <?= $description; ?>
     </div>

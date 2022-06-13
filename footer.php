@@ -22,7 +22,7 @@
 
                     <div class="row mt-4 justify-content-center">
                     <div class="col-2 text-center">
-                        <a href="https://www.facebook.com/Learn2Solutions/" target="_blank" rel="noopener,noreferrer">
+                        <a href="https://www.facebook.com/Learn2Solutions/" target="_blank" rel="noopener,noreferrer" aria-label="Learn2 on Facebook">
                             <svg width="12" x="0px" y="0px" viewBox="-139 -56 320 512">
                             <path fill="#fff" d="M140.1,232l14.2-92.7H65.5V79.2c0-25.3,12.4-50.1,52.2-50.1h40.4v-78.9c0,0-36.7-6.3-71.7-6.3C13.1-56-34.7-11.6-34.7,68.7
                                 v70.6h-81.4V232h81.4v224H65.4V232H140.1z"/>
@@ -30,7 +30,7 @@
                         </a>
                     </div>
                     <div class="col-2 text-center">
-                        <a href="https://twitter.com/learn2solutions" target="_blank" rel="noopener,noreferrer">
+                        <a href="https://twitter.com/learn2solutions" target="_blank" rel="noopener,noreferrer" aria-label="Learn2 on Twitter">
                             <svg width="20" x="0px" y="0px" viewBox="-43 -56 512 512">
                             <path fill="#fff" d="M416.4,95.7c0.3,4.5,0.3,9.1,0.3,13.6c0,138.7-105.6,298.6-298.6,298.6c-59.5,0-114.7-17.2-161.1-47.1
                                 c8.4,1,16.6,1.3,25.3,1.3c49.1,0,94.2-16.6,130.3-44.8c-46.1-1-84.8-31.2-98.1-72.8c6.5,1,13,1.6,19.8,1.6c9.4,0,18.8-1.3,27.6-3.6
@@ -43,7 +43,7 @@
         
                     </div>
                     <div class="col-2 text-center">
-                        <a href="https://www.youtube.com/user/Learn2Inc" target="_blank" rel="noopener,noreferrer">
+                        <a href="https://www.youtube.com/user/Learn2Inc" target="_blank" rel="noopener,noreferrer" aria-label="Learn2 on YouTube">
                             <svg width="26" x="0px" y="0px" viewBox="-11 -56 576 512">
                             <path fill="#fff" d="M538.7,68.1c-6.3-23.7-24.8-42.3-48.3-48.6C447.8,8,277,8,277,8S106.2,8,63.6,19.5c-23.5,6.3-42,24.9-48.3,48.6
                                 C3.9,110.9,3.9,200.4,3.9,200.4s0,89.4,11.4,132.3c6.3,23.6,24.8,41.5,48.3,47.8C106.2,392,277,392,277,392s170.8,0,213.4-11.5
@@ -54,7 +54,7 @@
         
                     </div>
                     <div class="col-2 text-center">
-                        <a href="http://www.linkedin.com/company/ilearn2" target="_blank" rel="noopener,noreferrer">
+                        <a href="http://www.linkedin.com/company/ilearn2" target="_blank" rel="noopener,noreferrer" aria-label="Learn2 on LinkedIn">
                             <svg width="22" x="0px" y="0px" viewBox="-75 -56 448 512">
                             <path fill="#fff" d="M25.3,392h-92.9V92.9h92.9V392z M-21.2,52.1C-50.9,52.1-75,27.5-75-2.2C-75-31.9-50.9-56-21.2-56C8.5-56,32.6-31.9,32.6-2.2
                                 C32.6,27.5,8.5,52.1-21.2,52.1z M372.9,392h-92.7V246.4c0-34.7-0.7-79.2-48.3-79.2c-48.3,0-55.7,37.7-55.7,76.7V392H83.5V92.9h89.1

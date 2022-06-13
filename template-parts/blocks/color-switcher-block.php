@@ -97,7 +97,7 @@ $paragraph_5 = get_field('paragraph_5');
         <a href="<?= $button_link_3; ?>" class="align-items-center cta d-inline-flex text-uppercase white mb-4"><?= $button_3; ?></a>
     </div>
     <div class="shadow-text text-center">
-        <div class="counter"><?= $number; ?></div>
+        <h6><div class="counter"><?= $number; ?></div></h6>
         <p class="text-uppercase"><strong><?= $paragraph_5; ?></strong></p>
     </div>
 </section>
