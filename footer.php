@@ -88,6 +88,7 @@
 </footer>
 
 
+<?php if(!is_page(938) && !is_page(1803)): // Do not display modal on Book a Call and Contact pages since the forms are inline ?>
 <!-- Modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -109,6 +110,7 @@
     </div>
   </div>
 </div>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 
