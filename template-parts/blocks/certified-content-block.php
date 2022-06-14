@@ -67,8 +67,13 @@ $image_2 = get_field('image_2');
                 
             </div>
             <div class="col-md-4 col-xl-3">
-                <div class="pic"><img src="<?= $image_1; ?>" alt="" class="w-100"></div>
-                <div class="pic"><img src="<?= $image_2; ?>" alt="" class="w-100"></div>
+
+                <div class="pic">
+                    <?php echo wp_get_attachment_image($image_1, 'full', '', array('class' => 'w-100')); ?>
+                </div>
+                <div class="pic">
+                    <?php echo wp_get_attachment_image($image_2, 'full', '', array('class' => 'w-100')); ?>
+                </div>
             </div>
         </div>
     </div>
