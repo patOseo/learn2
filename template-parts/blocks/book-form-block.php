@@ -30,7 +30,7 @@ $book_form_shortcode = get_field('book_form_shortcode');
         <div class="row">
             <div class="col-md-5 col-lg-4 pe-xl-5">
                 <div class="img-person mx-auto">
-                    <img src="<?= $left_side_image; ?>" alt="" class="w-100">
+                    <?php echo wp_get_attachment_image($left_side_image, 'full', '', array('class' => 'w-100')); ?>
                 </div>
                 <div class="text">
                     <?= $left_side_description; ?>
