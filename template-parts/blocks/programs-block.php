@@ -79,7 +79,9 @@ $programs = new WP_Query($args);
                 <?php while($programs->have_posts()): $programs->the_post(); ?>
                     <div class="col-md-4">
                         <div class="box d-flex flex-column h-100 justify-content-between">
-                            <div class="img"><img src="<?php echo the_post_thumbnail_url('program-view'); ?>" alt="<?php the_title(); ?>" class="w-100"></div>
+                            <div class="img">
+                                <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'program-view', '', array('class' => 'w-100')); ?>
+                            </div>
                             <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
                                 <div class="text">
                                     <h2><a href="<?php if(get_the_ID() == 3349) { echo "https://www.save-the-titanic.com/"; } else { the_permalink(); } ?>" class="stretched-link"><?php the_title(); ?></a></h2>
