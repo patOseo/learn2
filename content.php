@@ -1,6 +1,6 @@
 
     
-    <section class="hero blog-hero align-items-end d-flex " style="background-image:url('/wp-content/uploads/2021/07/blog-bg-39.jpg')">
+    <section class="hero blog-hero align-items-end d-flex " style="background-color:#000;background-image:url('/wp-content/uploads/2021/07/blog-bg-39.jpg')">
         <div class="container-xl">
             <p class="text-center text-uppercase text-white h1">Blog</p>
         </div>
