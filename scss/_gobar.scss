@@ -9,8 +9,13 @@
         color: $white;
     }
     .cta {
-        color: $orange;
+        color: #c1490e;
         text-align: center;
+
+        &:hover {
+            background: #fff5f5;
+            color: #c1490e !important;
+        }
     }
     @include min-screens {
         &:before,
