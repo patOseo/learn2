@@ -20,7 +20,7 @@ $background = get_field('background');
 $style = '';
 
 if($background == 'color' || $background == 'image'){
- $style = $background == 'color' ? "style='background-color:".get_field('background_color')."'" : 'style="background-image: url('.get_field('background_image').');"'; 
+ $style = $background == 'color' ? "style='background-color:".get_field('background_color')."'" : 'style="background-color:#000;background-image: url('.get_field('background_image').');"'; 
 } 
 
 // section 1
