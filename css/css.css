@@ -2,6 +2,9 @@
 body {
   -webkit-font-smoothing: antialiased; }
 
+.wp-block-cover {
+  background-color: #000; }
+
 @font-face {
   font-family: 'URW Geometric';
   src: url("../fonts/URWGeometric-Regular.woff2") format("woff2"), url("../fonts/URWGeometric-Regular.woff") format("woff");
