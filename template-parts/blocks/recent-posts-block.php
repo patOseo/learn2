@@ -22,7 +22,7 @@
                     <h3 class="text-uppercase"><a href="<?= get_permalink($recent_post_1); ?>" class="stretched-link"><?= get_the_title($recent_post_1); ?></a></h3>
                     <p><?= get_the_excerpt($recent_post_1);  ?></p>
                 </div>
-                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4" aria-label="<?= get_the_title($recent_post_1); ?>">read more</button>
+                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4" aria-label="Read More About <?= get_the_title($recent_post_1); ?>">read more</button>
             </div>
             <div class="box col-md-4 d-flex flex-column justify-content-between">
                 <div class="upper">
@@ -32,7 +32,7 @@
                     <h3 class="text-uppercase"><a href="<?= get_permalink($recent_post_2); ?>" class="stretched-link"><?= get_the_title($recent_post_2); ?></a></h3>
                     <p><?= get_the_excerpt($recent_post_2);  ?></p>
                 </div>
-                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4" aria-label="<?= get_the_title($recent_post_2); ?>">read more</button>
+                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4" aria-label="Read More About <?= get_the_title($recent_post_2); ?>">read more</button>
             </div>
             <div class="box col-md-4 d-flex flex-column justify-content-between">
                 <div class="upper">
@@ -42,7 +42,7 @@
                     <h3 class="text-uppercase"><a href="<?= get_permalink($recent_post_3); ?>" class="stretched-link"><?= get_the_title($recent_post_3); ?></a></h3>
                     <p><?= get_the_excerpt($recent_post_3);  ?></p>
                 </div>
-                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4" aria-label="<?= get_the_title($recent_post_3); ?>">read more</button>
+                <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4" aria-label="Read More About <?= get_the_title($recent_post_3); ?>">read more</button>
             </div>
         
         </div>
