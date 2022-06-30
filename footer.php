@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <p class="h5 text-white">
-                            <strong class="text-uppercase">Call Toll Free:</strong><br><a href="tel:1-877-453-2762">1-877-453-2762</a>
+                            <strong class="text-uppercase">Call Toll-Free:</strong><br><a href="tel:1-877-453-2762">1-877-453-2762</a>
                         </p>
                     </div>
                     <div class="col-lg-6">
