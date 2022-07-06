@@ -66,7 +66,7 @@ $programs = new WP_Query($args);
                                 <h2 class="text-uppercase"><?php the_title(); ?></h2>
                                 <p><?php echo wp_trim_words(the_excerpt(), 30); ?></p>
                             </div>
-                            <a href="<?php the_permalink(); ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer">Learn More</a>
+                            <a href="<?php if(strpos(get_the_title(), 'Titanic')) { echo "https://www.save-the-titanic.com/"; } else { the_permalink(); } ?>" class="align-items-center blue cta d-inline-flex mt-4 text-uppercase text-white" target="_blank" rel="noopener,noreferrer" <?php if(strpos(get_the_title(), 'Titanic')) { echo 'target="_blank"'; } ?>>Learn More</a>
                         </div>
                     </div>
                     <?php endwhile; ?>
@@ -84,7 +84,7 @@ $programs = new WP_Query($args);
                             </div>
                             <div class="copy d-flex flex-column flex-grow-1 justify-content-between">
                                 <div class="text">
-                                    <h2><a href="<?php if(get_the_ID() == 3349) { echo "https://www.save-the-titanic.com/"; } else { the_permalink(); } ?>" class="stretched-link"><?php the_title(); ?></a></h2>
+                                    <h2><a href="<?php if(strpos(get_the_title(), 'Titanic')) { echo "https://www.save-the-titanic.com/"; } else { the_permalink(); } ?>" class="stretched-link" <?php if(strpos(get_the_title(), 'Titanic')) { echo 'target="_blank"'; } ?>><?php the_title(); ?></a></h2>
                                     <p><?php echo wp_trim_words(the_excerpt(), 30); ?></p>
                                 </div>
                                 <button class="align-items-center cta d-flex justify-content-center lightblue text-uppercase text-white mt-4">read more</button>
