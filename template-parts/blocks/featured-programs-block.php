@@ -29,7 +29,7 @@ $background_color = get_field('background_color');
 ?>
 
 <section class="sec bluegrad">
-        <h2 class="text-center text-uppercase"><?= $heading; ?> </h2>
+        <?php if($heading): ?><h2 class="text-center text-uppercase"><?= $heading; ?> </h2><?php endif; ?>
         <div class="container featured">
             <div class="justify-content-around row">          
             <?php
@@ -50,7 +50,7 @@ $background_color = get_field('background_color');
                     
                   
                   <div class="col-md-6 col-lg-5 box">
-                    <h3 class="text-center text-uppercase"><?= $heading1; ?> </h3>
+                    <?php if($heading1): ?><h3 class="text-center text-uppercase"><?= $heading1; ?> </h3><?php endif; ?>
                     <a href="<?= $link; ?>" class="d-block img-feature">
                         <?php echo wp_get_attachment_image($background_image, 'full'); ?>
                         <h2 class="mb-0 text-center text-uppercase" <?php if($color): ?>style="color:<?php echo $color; endif; ?>"><?= $title; ?> </h2>

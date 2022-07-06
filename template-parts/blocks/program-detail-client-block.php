@@ -27,7 +27,7 @@ $heading = get_field('heading');
 
 
 <section class="sec col-meta">
-    <p class="text-uppercase text-center h2"><?= $heading; ?></p>
+    <?php if($heading): ?><p class="text-uppercase text-center h2"><?= $heading; ?></p><?php endif; ?>
     <div class="container">
         <div class="row text-center">
             
