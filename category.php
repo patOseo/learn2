@@ -107,8 +107,10 @@ if($featured) {
             <div class="col-12"><p>Page <?= $paged; ?> of <?= $total; ?></p></div>
             <div class="col-12 d-flex justify-content-between">
 
-                <?php if($paged <= $total && $paged > 1  ) : ?>
+                <?php if($paged <= $total && $paged > 2  ) : ?>
                     <a href="/category/<?php echo $cat->slug; ?>/page/<?= max( 1, get_query_var('paged') - 1 ); ?>/" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">&lt;&lt; Latest Entries</a>
+                <?php elseif($paged <= $total && $paged == 2): ?>
+                    <a href="/category/<?php echo $cat->slug; ?>/" class="cta d-inline-flex justify-content-center lightblue mt-4 text-uppercase text-white">&lt;&lt; Latest Entries</a>
                 <?php endif;  ?>
                 
                 
