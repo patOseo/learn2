@@ -35,7 +35,7 @@ $background_image_left = get_field('background_image_left');
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-lg-4 pe-xl-5">
-                    <div class="img-person mx-auto">
+                    <div class="img-person w-100 mx-auto">
                         <img src="<?= $left_side_image; ?>" alt="Learn2 Logo" class="w-auto">
                     </div>
                     <div class="text">
